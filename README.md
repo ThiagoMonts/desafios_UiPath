@@ -33,6 +33,9 @@ Nestes desafios não foram utilizadas nenhuma tecnologia específica, apenas a f
 - [Desafio 2 - Shopping List Bot](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%202%20-%20Shopping%20List%20Bot)
 - [Desafio 3 - Message Decoder](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%203%20-%20Message%20Decoder)
 
+<br>
+
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
