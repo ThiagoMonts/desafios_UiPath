@@ -32,6 +32,7 @@ Nestes desafios não foram utilizadas nenhuma tecnologia específica, apenas a f
 - [Desafio 1 - Basic Login](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%201%20-%20Basic%20Login)
 - [Desafio 2 - Shopping List Bot](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%202%20-%20Shopping%20List%20Bot)
 - [Desafio 3 - Message Decoder](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%203%20-%20Message%20Decoder)
+- [Desafio 04 - Customer Onboarding](https://github.com/ThiagoMonts/desafios_UiPath/tree/main/Desafio%2004%20-%20Customer%20Onboarding)
 
 <br>
 
