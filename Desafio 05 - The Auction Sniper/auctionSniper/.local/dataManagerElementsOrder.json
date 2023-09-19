@@ -1,0 +1,27 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "sFinalPrice&Sequence_2",
+        "sBidTime&Sequence_2",
+        "sChallengeResult&Sequence_2",
+        "nAuctionTimeLeft&Sequence_1",
+        "isAuctionTimeLeftGreaterThanZero&Sequence_2",
+        "sAuctionTimeLeft&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

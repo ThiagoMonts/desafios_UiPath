@@ -1,0 +1,284 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1244,3212" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="668,3147" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="sAuctionTimeLeft" />
+      <Variable x:TypeArguments="x:Double" Name="nAuctionTimeLeft" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Automation Anywhere Labs - Auction Sniper" sap:VirtualizedContainerService.HintSize="606,3036" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="56305615-d471-4a82-bc4e-d3621c744e22" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2819" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="isAuctionTimeLeftGreaterThanZero" />
+              <Variable x:TypeArguments="x:String" Name="sChallengeResult" />
+              <Variable x:TypeArguments="x:String" Name="sBidTime" />
+              <Variable x:TypeArguments="x:String" Name="sFinalPrice" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text '50 seconds'" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" TextString="[sAuctionTimeLeft]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w" CvType="AnyWordGroup" DesignTimeRectangle="1337, 899, 87, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'50 seconds'" FullSelectorArgument="&lt;webctrl id='time-left' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='time-left' tag='SPAN' type='' class='' /&gt;" Guid="66ba8526-7e0b-4606-a52a-8ae9f39c6221" InformativeScreenshot="b759377f7c9a7f920be0a6b296fd1b66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uast:SplitText Results="{x:Null}" DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="SplitText_2" Result="[sAuctionTimeLeft]" Separator="Space" SeparatorKey="Space" Source="[sAuctionTimeLeft]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uast:SplitText>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Current Highest Bidder'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" Text="500" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w" CvElementArea="1269, 780, 209, 42" CvTextArea="1282, 793, 137, 18" CvTextArgument="Enter your Max Bid" CvType="InputBox" DesignTimeRectangle="1271, 828, 206, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT ending-soonest-bid'" FullSelectorArgument="&lt;webctrl id='ending-soonest-bid' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ending-soonest-bid' tag='INPUT' type='text' class='form-control max-bid-field' aaname='' /&gt;" Guid="13d183a5-4091-4d76-83fe-2a3ccb35c66e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANIAAAAqCAYAAADGWAU2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQJSURBVHhe7Z09ctswEIVz4LQp3ahzp86lCp3AhRtfQDMeH8Fj38EuXCL4pd4uFvwBZceh3pv5ihAgFovdRzJJoV+OoqjVopEo6gISRvr8/HQfHx/u/f2dEGIQ/BF8ojUYKQxaNxJCarSZBiPxTUTIfIJfUIORrMmEkDYoGomQTlA0EiGdoGgkQjpB0UiEdIKikQjpBEUjEdIJikYipBMUjURIJ6gVRnpz97c37vefNndP1n1tToe9u3+1x7ZDObfxXE+HMOfoTsbY5Rip4e2je4G5Lw/76pom7nlizpZArTfS4dkY6+Dp6At4RUa63btdyyjxLEJDf5ORqhqWPS4zBY3kZU0ch0bqo5zb0d15s9Rv7TC+d3f+7fzvjOSJ9VgWn0bysiaOs8BIpSjDkzZRmih+NsD13cPbcG/6xClooz37ZvTXHsq6lhHDHLlmpDJumneOJZvI/LRRa8Q5h8d0LmEN82zO5xZz03NeH93OxznFM1GNrM5P7D/cV8XMOTWbe76RrPxFbfzYPY30HUaSh5yKAI1SNXZrDj7FS/OrhlPEdawmKNeMJtSxZxvJr1OZVgDnppo1ENYI96e1es7nPKcar2jVMF3Ht6XO3zwfVeOtg/rCf2wYb4LSvEOx9Bw9nhEGaL1tNFV8eZ9c056jGymi1q2a3wSbN8U45xjG0np6rbhH3fDGuQ65xLH6/CTjNcRzFfmbtclrVee4XVDf+2mH1yaM1GxKsZZuxBbKcCJWOw802GwjTTYSxlOxw3oYr2HKuC+fT0IaaXi7BiZrM5F7KzdRA3XPZP7bAfXDjRSKabHUSLIRZMFTHtZb7euNVO9LvAHxzGKskn+OqeIXtAnajNWw/Uau9paZl/92QP1/byTBfCOleGF99XYaySM2pNHww5wLGEnuq5V/Y4+WkeI1PzewdC+CtpHMenrkA2r7oH6skcwm8chmXWCkvN/d4Zgb9zxmN4DRSCqHdE01/+LmzXH8343wXhnPzrN+86R5ce18vucHhsW0kUpMkZuuXSSvNZn/dkD9XCN5UqPAfVUB7QZrkZrTKHZeF3OpYsf9Qaxyz2ojlViy6aWRjCbN+8E9yXvKn+WZSto11A8XnZs+nxRL7XHjoNYbKRfTpBRojpFwPaPJCtI0y4xUYtpP6fw0LxgNMTRLxOcT11tvJOshkmLhman9DfFzPtlYMrdypursq3EDlYeVm6iNH+P/I3lZEzeH0bCE9IK6KiPFJ6jxGUNID6irMNI1fr+Trwd1XZ92hFwQFI1ESCcoGomQTlA0EiGdoGgkQjpB0UiEdIKikQjpBEUjEdIJajASf2iMkPk0f2iMP31JyHyaP30ZFAb5ZiKkTfCHNlGQMBJFUX2ikShqtZz7C6mUCQp2UF6XAAAAAElFTkSuQmCC" InformativeScreenshot="37272745873734da212823e3364cdfff.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1271, 767, 181, 17" ElementType="Text" FriendlyName="'Current Highest Bidder'" FullSelectorArgument="&lt;webctrl id='high-bidder-label' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='high-bidder-label' tag='STRONG' type='' class='' aaname='Current Highest                                             Bidder:' check:innerText='Current Highest Bidder:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALkAAAAVCAYAAAAac0/JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVGhD7dSxCcAwEARB91+uFCiUcSIwuAEvM3DZh8tfG+JETp7IyRM5eSInT+TkiZw8kZMncvJETp7IyRM5eSInT+TkiZw8kZMncvJETt4r8rXWnnPuMYZZZifyJ/CvA7O/70Tug1tzY9/m0id5Wo1nsQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Quick Bid'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.70850320.1655813337.1694958224-302507403.1692792980&amp;_gl=1*f2rfxb*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEzMDEwNS40NS4xLjE2OTUxMzAyODEuNTguMC4w&amp;_fsi=B8tldH8f" CvElementArea="1269, 526, 208, 40" CvTextArea="1335, 537, 77, 15" CvTextArgument="Quick Bid" CvType="Button" DesignTimeRectangle="1271, 528, 206, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Quick Bid'" FullSelectorArgument="&lt;webctrl id='auctionQuickBid' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='auctionQuickBid' tag='A' type='' class='btn btn-primary btn-block' aaname=' Quick Bid ' check:innerText='Quick Bid' /&gt;" Guid="37688f68-012c-40d8-809f-21e7bced3069" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANIAAAAoCAYAAACLkKQ9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKuSURBVHhe7Z0xbhsxEEV9AV/Ubcp0OYdPESCljpDWnS+QxmXKDZklic/ZGWoxCoRAfh94sKTlkpQwb0nJxT5thJCbg0iE/INMIr1837bnb+XFrwDgUf2ontgMkepB70QAOGJlGiKxEgGcp/qiGSJ5jQEgRoNIAEk0iASQRINIAEk0iASQRINIAEk0iASQRINIAEk0iLTgrX02mlen3Rm+vLcOfpfHznGXH9v20U67lMduG4fXX+2kIG8/pf3ZMZJzeWQ0iORRCm2VjyKFe96C/0mkmiHT2TGSc3lkNIhkkYKxRa8FepdiShbvmGf5a49dynuKji1JzuWR0SCSYRRhsHIcijQoMNsuXJHs6tf7rTh9j35Kom3mSqTDPIL523ldynNEmtEgkqFfscPtmxTY30IOCvGMSCrFlC6A6Vvbr4p5JdLh/Xnzt3KbINKOBpEM/QeG6Qu5IoV3q0h9rLCo9blIFM6tMcaOooI58x/ny1y1T0Ta0SCS4W4i2X48pM2IShBwVaSS1Y8N7mfgtPvsaBDJcLetne3HQ/rWXCtkO7ai28No/tHFpL+OSDsaRDKMIrTbmvZ8/OrVjzuFOPXTivnmFan0M/pofUasRKpMQjjz7++RFWmNBpEsUjCjEPW1Fu97jbddCkUq9ILW1W9aDaSfXrzRaqGcXZEikcKLSQsi7WgQyUGLLYquImOV8rIQKRynt3GK3OvHokUfpkvmjDFdCJwg0o4GkRb0q78X+x1qaluK1K4KoQBlZZmix70iL7hbL+GqSF2iSjCGlYn/Ix3RIFKCLgUF9bnRIBJAEg0iASTRIBJAEg0iASTRIBJAEg0iASTRIBJAEg0iASTRIBJAEs0Qidu6AJwnvK0LNxoDOE94o7GaepCVCSCm+mElqplEIoTkgkiE3Jxt+wPKP9viEH5GTwAAAABJRU5ErkJggg==" InformativeScreenshot="2bfa043e3d2d13510bde0008e321df88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[nAuctionTimeLeft]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[CInt(sAuctionTimeLeft)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[nAuctionTimeLeft &gt; 1]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510,490" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,354" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text '50 seconds'" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" TextString="[sAuctionTimeLeft]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w" CvType="AnyWordGroup" DesignTimeRectangle="1337, 899, 87, 17" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'50 seconds'" FullSelectorArgument="&lt;webctrl id='time-left' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='time-left' tag='SPAN' type='' class='' /&gt;" Guid="66ba8526-7e0b-4606-a52a-8ae9f39c6221" InformativeScreenshot="b759377f7c9a7f920be0a6b296fd1b66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NGetText>
+                  <uast:SplitText Results="{x:Null}" DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="SplitText_3" Result="[sAuctionTimeLeft]" Separator="Space" SeparatorKey="Space" Source="[sAuctionTimeLeft]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uast:SplitText>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Double">[nAuctionTimeLeft]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[CInt(sAuctionTimeLeft)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Place Bid'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w#" CvElementArea="1051, 743, 142, 39" CvTextArea="1085, 754, 75, 15" CvTextArgument="Place Bid" CvType="Button" DesignTimeRectangle="1053, 745, 140, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Place Bid'" FullSelectorArgument="&lt;webctrl aaname='Place                         Bid' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Place                         Bid' tag='BUTTON' type='button' class='btn btn-success' check:innerText='Place Bid' /&gt;" Guid="4a31f3ed-4b2b-48d0-a94a-6f274f7ce885" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAoCAYAAAAR33OgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVHhe7ZwxThxBFER9HOc+A6nP4EuYnNCpA05gicDkZKQkliOHtuQQiQgJEbBCg2pFjYrP75nmb0Dvqkp6Yranu+fv9KNno/kwOc4OsUDOTnkh0Mmv79Onn5+nj2dHxrwCbsARzSwQTmSDjImoRLNA3nlML3CFmQXKOhrTgrFApgRjgUwJxgKZEowFMiUYC2RKMBbIlGAskCnBDCfQ1fXv54pe525zPx1ffZv7/r39v23HX53jPTj982N6eNxs68lyfX8zfbn8OvfvrX2k76gweyUQohKNdHPXBEJUot7aR/qOCjOsQPE/Vhfo/N/Ftm2km8v6AI71HOpFsnNrWKA30hIIx2hD0Adt2c3NdgIKR3QuJFtY7HLY7ZhYT2RJIJ1rSf5YF85l/UaAOagdKJMH0UWNYjDapzVP/A2mcIzOQ7gDLT1+ozwxFqiTtd9AKlZcBI7lDpX957PP0mLyM+dptSkt6ZgoVrymjmet2sZ+o8DslUDxJsZFyM4xcddqidDaoZjsWmBNIKRH/rjzxn6jwOzNIywj3lw+KrLgnD4mqgK16qJAcacBOievG2tvfW+2W6BOqgKpHBybPcI4pkcgjulhSSAQRdDa8Znyx+8d+40CczACZQvPRUHYxvnRF2O0jdfkvPwMcIy0xOvdgSiC1q7jEdaqbew3CsxB7kBZuCi6mDHZwmlUukhrjEbligJpWxbtNwLMQf0GinJACM6nC5DJRnlIFGJJHrAmkMoDYu2xHcFxq997wwwnkNkPGAtkSjAWyJRgLJApwVggU4KxQKYEY4FMCcYCmRKMBTIlGAtkSjCzQH69i+klfb2LXzBleklfMIXghHci0wJuqDzIC4Ec562xQM4OmaYnJE9fS88cj+AAAAAASUVORK5CYII=" InformativeScreenshot="75002c9051d32f2a063898c5d9242f88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text ''" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" TextString="[sChallengeResult]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w#" DesignTimeRectangle="664, 557, 538, 39" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Score! You'" FullSelectorArgument="&lt;webctrl id='success-title' tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl id='success-title' tag='H4' type='' class='modal-title mx-auto mb-1' /&gt;" Guid="fec7663c-5394-4c73-bd82-c137baa6bac7" InformativeScreenshot="a6c319997bf04cb3b7edc49809378f56.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="910, 384, 46, 16" FriendlyName="''" FullSelectorArgument="&lt;webctrl parentid='icon-box' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='icon-box' tag='I' type='' class='material-icons' aaname='' check:innerText='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAUCAYAAADPym6aAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHGSURBVFhHzZTLTgJBFER7qeLXqH/mXgMaXgYkgkCIS/0PFeS5UJmPEN2aqBGlrHYGM05u9wyPMHRSqXvput19MgkK5xtYKzk14Osd/9bnK9Dcl/OeCLIJVNhUPI+zHwoQ4zdgkJHzvl6hzGYdZILoE0LKB6RwRqK49Vg3Q0h5QQolFiVSxeUPBogeIaLMe+6CnOomBrdCCHmLKxRZxKFBgY8WILqEkPIhUihsAQU2q/S+BSLKvOAKJ2xWqZ4BokMIKR9RBCFRnlqF94oyRDsbbd7iCjkWOVKFuXMFjO6Bix15P8y7Fogo8yGukGURJucS+B67l784LoyUM8kEcUcIKT+HFDIs0lTQp+qX+Rf54d3urWfCNAgjzQXnOwaIFiGkueB8xH2FdML70eCNXT58yNsn7iOm6w/GMm+FsMzN4QrHbMJU54NHBhi9J820DRBNQkj5BUUQEh35ZOpr/DImGL3nz7fyFggv588voVdIsUiSKkX9uqWvGr7MSMNwT+eaBohbQoSdv0CvkNTFDKoavoyGaZcsEMJZS5TCIYtZVSHME2EmAZjg+iTEDSGkM5YsgmwDB7qZ0St7dhgNca0hIp63kCfwA3x39jxmeWYKAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'alarm Bid Time'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" TextString="[sBidTime]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w#" DesignTimeRectangle="665, 715, 252, 83" DesignTimeScaleFactor="1" FriendlyName="'You bid'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='myModal' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-md-12 text-center p-y-1 bg-value' parentid='myModal' tag='DIV' aaname='                                                                              ' /&gt;" Guid="827220d4-95a7-445c-be48-3947dfbcf485" InformativeScreenshot="caedccbbef5138a793417d150b65d5e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="BID TIME" CvType="Text" DesignTimeRectangle="680, 681, 222, 26" ElementType="Text" FriendlyName="'alarm Bid Time'" FullSelectorArgument="&lt;webctrl parentid='processing-time-head' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='processing-time-head' tag='H2' type='' class='score-label my-2' aaname=' Bid Time' check:innerText='alarm BID TIME' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOIAAAAeCAYAAAAxQMK1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARUSURBVHhe7ZtPa9tIGMYX9hv0nFNPOeXizyHwsRhy6GnNHgyGLgsRPdSX4sBiAht6CA0UsxBTaJyDUSH1oZDCohyCFwpZCCoUdAgIAoI9CAzP6s/IHo1Gtqw0VNBn4EeSeedfYH5+JY38U6PRACHk+0IRCakBFJGQGkARCakBFJGQGkARCakBFLEQA61dQ1OvUrYdIcVQRC0dDK88IHAw7uriSzpnDoK5h9mbjjZOSBkookqzj+nXAHEJXExfRtnOQPt3E4cnFqyJhdGfJn77Janvn7tIWgdwz/swdGNm2IF9+jPwQcPpYwzktk8ew//wCPaTCn1V4rE0/TJsYbxoK8+7DUeOaxFrk9YxPpbHzuPv7yhj/LhQRAljb4RrP7YK8GYYdlvoTxz4c1GnljsH1n4LnTczeKKN/+8IZlM/foLYsMfb+npZqCIRc33TTb9KFIVnW2F7eWyJAhH900eFwg/2w1gkmCriug8IEkMRFzzF6EbkthsL5t4Qs/DqNC3BnQvnxhG48EXSjIp3NYT5cgo3rgvgvH2qGT+lWKZEDkmmDURcHdNQRcTjLaVejm/BUcSjiOWhiDJNE8OTQ7SaA9h3sWMIbm0M93QPYwyYf9nwhJD+5QBGd4jpJPyZayvzUCKGrJJLpYqI+9vx/LlLymiscE2qeBSxPBQxRxvjNDN+CTOjdJlpvpvBuRrDlNt3x3DSTPiuvawvpEimpN55JtVtKmLcXhmjiEoi7iSXoIpckXDRnBSxOhRR5dUsefjy3wyvlXu9wWV4A+nbuY1lHC37HCqxPEKm6H5KQybbbCqiEOYhRdTHkiyuFVH637IUzP2DQhEVXv+TZEP3fT67FYkYZVHra9QrwOxIjakUy5RsXGmD1lHEzO/iIY1YDzNidShihr64N3Qx/TUfLxaxgfa5G3WE/3c/F8uySqbsJt9YxLj9Q4soBIvXkKwnnY8iVociZhjAjo8vHO0xwCoRG2dOIuLlIB/L8IAixnKVPMK4h4iLeeJ2y/koYnUoYoYSIsKHM+mjpca/oYiLjLaRiGskVbmPiHE8/Ds6V5Tmo4jVoYgZTFzEZ4ceLp5r4tHxxqV4k8Z3MD0yF0cV5sfk0NH7aOb7ZSgWJrdxNxAx7ls2G0bcR8R0HfKHRghFrA5FVEiyXijUp542HmHsDWHHp/fp4X1PCOzD/kPfZ8lyE+dQN22RiGX6ruNeIoqHNIr4WhHVdcpQ0gUUUeXFRZgPwzJ3Ya184duAedBHJ/y9M0ke1MC7QC/XjpD1UMQcxiIr4s7G4a6uzZLWKzvMg1EJs+EBvw5FqkERtXQw/pKcJ0bfwLBPevmHM7s9jNL7xegS9YxfgyLVoYhFNE2MPovMGJV5AP82eenbk9/4nvu4frt8aENIFSjiSgy0Dyxc30pCpiUU0PtsYRB/L1HXl5DyUMQNaHVNmM9NdNbcNxKyKRSRkBpAEQmpARSRkBpAEQn57jTwP3vg5wIqUfL8AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'speed Auction Price'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" TextString="[sFinalPrice]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w#" CvElementArea="950, 709, 249, 69" CvTextArea="1022, 731, 105, 30" CvTextArgument="$285.00" CvType="Button" DesignTimeRectangle="964, 731, 222, 32" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$285.00'" FullSelectorArgument="&lt;webctrl id='accuracy' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accuracy' tag='H3' type='' class='score-value my-3' /&gt;" Guid="f3312fad-d5b4-43fe-a23f-13d064f2cfd1" InformativeScreenshot="f142ce15a07d518828393a675f97f149.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArgument="AUCTION PRICE" CvType="Text" DesignTimeRectangle="964, 681, 222, 26" ElementType="Text" FriendlyName="'speed Auction Price'" FullSelectorArgument="&lt;webctrl parentid='accuracy-head' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='accuracy-head' tag='H2' type='' class='score-label my-2' aaname=' Auction Price                                         ' check:innerText='speed AUCTION PRICE' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOIAAAAeCAYAAAAxQMK1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASWSURBVHhe7Zq/SyNBFIAP/A+sraysbPJ3LFiKYHHViUXgwGsUm+sUJFiEK0QbsQgHGotgcXedVSwkVivICgfpAkLAYkF4Nzs/NrMzb2az0ejkeAsfkp03szsz79uZTfxUq9WAIIiPhUQkiAAgEQkiAEhEgggAEpEgAoBEJIgAIBEJIgBIRIIIgJkVMfryDXZ2m9DqtKC5uwP1dTxufJahezEH8HsOki1P+ckSUsbYWmB156G7ape1T0S7OReL0PCVIwz3l0ex6D0sQWLWw+JWF2HoKmPw9o37K6DqoyxAW4/lY4LFZdhj5e5b+Rjq8+cCn9cwmDER12CvE8PgGdAjfUqge74Ha2jdEniCLUDiTMQJRHQkvUgqXNqy66DJKhNeySpQiWnIoYmEJea4Ijrr6tcrfTgV7w3t29hjWDI/gTMzIkbbLYiH0jh2pE99SB6SnIEqGyZwdfAZbcNHnoDO5Kkqoi9elk0gvJWsHjEy8n6pc5qIlqQMK97Eez2xKudlHhFVrP7wsPpWaQz94xY6MyFidHgNg1R4lva7cLodoXFrX+tyNYxg56QJ341yN3pS2AkiKJloM+m8SVhjwi85kr2aiJXFUZ/3xV+zn28hYt6mdwzsfloiVhpDEnG6bLYhkRIObprl2871PfjzdwC9o0zWCKIVJMbEmHA8GauJ2Nif9ye0kyoiilj7oaFjxGgi8Xs0Ev1VIpplXpHKV8RqY0giTpEIju+EhendMURojIKtgmc9GLyMYqMj9vm2icQWsZKPJ5CZbNVELE1oJ1VEdK3eOkZ7BVlEff0+JxdRXucN3xGrjaG6vgt7Gx4SYYu4eQX9zMKXGFq+lY2vgnLZfO7BMY9tQjd7byyriyYWJoNfkNkUkSEfOqqN0vuW9e1EZ5j1ZNs4jvdTrd8Tieian8AJWsSNX1xDSJ2rGlsFf8YwZKugOFK5JRXlzVshZ3xm1hshtmcqOUz0ZBlHxFH8LGxNVQxvUz5ExhXRXhERkBVRjTdW3xSRtqaBoLalqEgrDbjuy1VQHtb29Szm54c3jWLdHM/kuRLWMdEiwTRxkSQs4CyvIuIE4qAiyS0qa3faImbwa7jO6/2uNIYk4tRoP3KNoHuAlJ8nXLL8yLekGgddVpsdj+3ieYU3qeTEaknpe0JbSeRNDLttq8yRUNZ1SsSwxHLF86RmsRlTFhF7N8143Rj6xy10ZlfEHz22EVVHcUuaUyIin3jPS7xY5fREGq0c/jiJTFozXlzX9aSvKGKGlKi4RZXtmP3ziCTuizF1EVVZ8Z7Rvo09hiTi1GjciF/p+x3sd8PsW9JriB8S6HX20G9Uo454x8S3prhUBWQS4Amu45YZjfcl+iQicmR/dLA4n0gq6d9DRIYSX7Xl7ts4Y4jNi4Fvrj+YoEVU73hw3yr56QIjgta9qO77soYgQiBsEWunEPP9ZwoD7d/ZxmMgtq5pDKdo2wQRDoGLWIP6ZaK9C1Y9Ukgu62i7BBESwYuYbTE3Dltw1bmqTOtwY4ItLUG8PzMgIkH8/5CIBBEAJCJBBACJSBABQCISRACQiATx4dTgH+OfpgungG0EAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="510,347" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="56305615-d471-4a82-bc4e-d3621c744e22" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w#" CvElementArea="880, 845, 104, 43" CvTextArea="919, 858, 28, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="883, 847, 100, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl id='btn-modal' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-modal' tag='BUTTON' type='' class='btn btn-success btn-modal-ok' aaname='OK' check:innerText='OK' /&gt;" Guid="7c9dc4df-b9b9-43c6-aff8-9cda43f224fd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAsCAYAAACJ1f3bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALcSURBVHhe7Zo9jtRAEIU5AuIAHIADcAwOsKRIJGSQE5GsREpIQEAIR4AIiYyAYAkQCVotCUIiQIig4NNMq2s8zz9jj+1it570JMtj74zr266urvY1S4VWAgqu6YDO3pm9PjV7emL26LbZvZtmd2+YnVy/WuaZeXZiQCyICbGZqHGALj6bvXxs9uCW/rHpamJErIjZCB0G6Mc3s+cP9Q9J95vYEcMDNBzQmxebIay+OD3cxJBYDtQwQDlqjm9iOkD9gJjw1Bekp5vY9qgbUMKZ3z2Q2gFlWlvOHelOA2ISU38oPZ9bCod9QJSBWa0tb2IuSvB9QJna1rNIdbuAWO2qG9PLudFx2AVES0LdlF7OMHDaBRS9t6Ym0q9n+9d9fLv57Pu52ZM79TzHnEN/fpu9Ot29L4Jh4FQB0XlVN0QxINrUDLYC5OGgyJWq64JXQLTH1cURXAKOfGCf3Tf79XNz3sNQgDzg6MsIWGxVAUXtGngIBL7r8xL4JqD/CQ523YUKiI0mdfHaJnWRwrrmjAKgzEce0Kf3m2OkAEc0LLaqgKIuTvmPR4wSRou6pgBpAmoqamHQNCy2qoCiblMfA9CXDzUNlmsiGxZbxQc0JcUhjjlXQKPo85AEFDXFHaNI4Jwvs/35iJYpLmqRgNWIwB6OT4EKEPajSMGOYlkkRN+cK2lMqZn+2gD5UeSBRrMssyMvVIv9CChSk34bIFzmNBS1YJAL1eitnqtk2epB+SLi+m5tlqLcbljfndsNuWG3vjs37FBuea/n3i1vlC+NrGNiPuilERS9FXIZrZYQ/6QBoUx1y1mktqJ2QCh6d+Ey2HUNlLoBoYQ0n3vgoH5AKNPd8d2R1ryGAUJMYlndTTcxbCkIlIYDQpSBOZrGm9iJUrpLhwEqYrVLSyJ7d/0mRsSq0SEYqnGAvOi80h5nwmOjiSEcdft8TvPMPDsxIBbExHWlx2o6oNSsSkChZfYXhfSkOm/Mpj4AAAAASUVORK5CYII=" InformativeScreenshot="3cbd35ef7879ea573cc1c7ab0ac5094e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[sChallengeResult]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,143" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[sBidTime]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,143" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[sFinalPrice]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAbxSURBVFhHpZZtTFvnFcf9pWuypg3tmjVrGmLeEoMBG2PaJBDb2CkvyQJpvlXtFqRpmrSXT5s67a3pl0nTptXkhdAklEsCbZdG3VsrVe3AhhBCs3ZDi5ZAo21OA5hAOztNmrXhXj9n//M8j415SUe7I/30P+fh+vzPufcasC03YgF3zkzQ0zITrDLAyPshb3ImVEXTQS/NBDn3RmeClcZ0qHIvX6s/9v/HVIPbfjVU1com2kxcra2k6VovqBQM14sIVBpTAbddt/nsoTb2htlUGgWUWcYQ9dWAR0wFOPcgV8r1VMCj8AOfZ59uufzgyWES00a6sUfm8ww0cTZiuPZViLi/Qp1xrohNbV7m3ZiurXChUSzbIIO/QjDKUBlpE4r73BmdhE5ucys4V/X/HoI3h1EsvYFSjTaa9Kmm8W3aSDXPMJGmxkWTNS4BBaoer3ZhCMfSQ/Azh1FMGWU1z5ipxnIA1hq3kDUbaENlJHMxLmul49XljFDqii35LZnwucMZE4XI3khvo41Uzg1lzc1l7aIrOGO0KV3ZupAycWVLWVjbqnC/tNve/h3/nAmboqk2I7mNNpn57jfoxss9ZMYnKR3i5rskZl4la2QXWecqGcGaYn3LQ5JzHpx5BM5kTcNZ70PlS3uMbUYzjYUq1Fb6dknFxDKvr6YbJ3u0JVE8Kah/bBaYdGkqpU8xzNSLZL3jJ/OtChgxbgzhxjDQYbeqoajVXXAbu3M8LzxGzL4fBjO3io1Z39tSRuN1W+nWpTFp8JeYSd8yPqKqZ65R1T4N8qbwdYqOzsprxM0xst6ugZmLDZUOc85aDi3HEOVJGsG74H5hd4u7ZzdVANb+Jq80ZfCsBOv133TLxkein5AXhhmezso1R3ENh4h3K7PhMk1pljJOMXumpMXm7m42ALm6m4S7p1k8+Ys6ury5lN7b7BTMxGP1siFvV/l0UuLROse1eefv4C5xpC7sFdZZJ5lnS8hagtRwiWFzdTdHXScwwIkmTTO9useLIZwUe8RJN177nWy289kPqeJnyTlglNF0rutvdt6QnxFTJ4R5thhm2TgwlINS0NRQ8Yit/HhTsvz4LkpT1rWLth9spL/7yij2cIm4dWmUxuIWudF8MYnbkKTJJF7MTyZguBGGmiEJMSZInS1K2MqMr8JUImSu659/u5piVcWCN4lcnCXXTxNLA7P5dYLKoRH9QlpDRWSeKSSLQW4NaZV1gbCVdu6kUpiWGjuF1C6lj7Q30vkap2zSd/EWlaHpQtgoW7PP+zA0h3WmAEb5wjoDhgowTD7O5uABks7OHUKxk6BAqvjeUz5hxidoMpGi0p/8+zMxiscmProAkzwyB/Ogdgxhl7XKN3CdsJU8v+OvJR2NpNhBqGXuZH2+UQz2n5SbtHRcJycaO38MWD+Ful9dk59JTZ+CGRvlCnMwlyzJBrBecG4Oro/aHB0NRvGxRpqjQQ7gONYgOP/6a0/JZn/+1yyVwLwYKP1A5nP13HkvHhmH9fYWMk+vBw/B9CHBqnOyWE+vM2yOow0tIGPIyPpovQCsdPy8+ioe6rtJjh99QA6YSF0Izg/1/kdee228E4brYLYO2z6I/EGYK6y0Dqzba7MbgZziI/XJTUfqKRsH69E6wXi79ojR9/8hG//pwi0K/jJJm2CYzdeOfUjn/qlevInEu5QYLCFz4CuatTBdK9JqnX5A5hTNUX+WNz1X37rpuTraqJH5kTqRroHwGntE1/nfSgOOi5OWHIaZwEuaDr6m849bsN1aGD+QwWLt/7JUa2CNsPrXGNKcw9HeYN/Y/igxRVrTeRaisH27CPQ8Sa+MvkEX9R3hGL9+lYy/vUJP/P4H5O/wwWiNYkBr//0ytwbuFzIH2H7+f0ZFbaHWosPbKU1hG+ujxKaFhyWkNCT4ZxldwKk/FMHkS8pU6n3YVipZyFlTA/ct/k/ZHg7kFBwOxQraVOOCQyEqBKx8JpXP2ubX2Tze9TDM7hVm9F4YAlaAM605wormxLTl4sAQ9oK2YCzdMP9gkApA/qGgkHCu66XOL7+JZxxdjQHuAathuBqGUNSa2KJbvzB4iPwDtTHZ9EAt5R2sFQznafJY8XNWmR8I0ve7y8mM3I1N71EKrOgqmK4SnM9G7ob5ik83TwcPkbe/NgbIfiAg8vYHpMochvb9Kk9T076VLr+B5xxZxabQu+ZhRe6Kfbxc8+zAIM/YW2F+W/wYxi86Xs4ns28ljL4oMSMrBNdmBPStDGe+758n+G7khv3GhrCfNrT6Re6zPsF5btgn6+q2zTBZobmTzF4QuTNp9q5s/fj1z7H17QKD5Kz/9bYWDNCFAaLQJKCTp/A7PXJHItX7hZFU7wpjtu+OluVvbLP9F5lmWAkTeM7rAAAAAElFTkSuQmCC" InformativeScreenshot="7d6654bcba0f5b0c82e1ed6814b74826.jpg" Selector="&lt;html app='chrome.exe' title='Automation Anywhere Labs - Auction Sniper' /&gt;" Title="Automation Anywhere Labs - Auction Sniper" Url="https://developer.automationanywhere.com/challenges/automationanywherelabs-auctionsniper.html?_ga=2.262887436.1655813337.1694958224-302507403.1692792980&amp;_gl=1*827cuz*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTEyNTI1NC40NC4wLjE2OTUxMjUyNTYuNTguMC4w" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
