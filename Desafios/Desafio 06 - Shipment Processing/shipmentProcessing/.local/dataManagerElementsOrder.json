@@ -1,0 +1,35 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtUsStates&Sequence_14",
+        "sState&Sequence_1",
+        "sTrackingNumber&Sequence_1",
+        "sCustomerContact&Sequence_1",
+        "sOrderTotal&Sequence_1",
+        "sZip&Sequence_1",
+        "sStateCode&Sequence_1",
+        "sCity&Sequence_1",
+        "sBuyerAddress&Sequence_1",
+        "sBuyerOrg&Sequence_1",
+        "sPONumberLookUp&Sequence_1",
+        "sPONumber&Sequence_1",
+        "sShippingType&Sequence_1",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

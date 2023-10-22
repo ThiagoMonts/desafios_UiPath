@@ -1,0 +1,725 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="875,1368" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="670,1303" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="sShippingType" />
+      <Variable x:TypeArguments="x:String" Name="sPONumber" />
+      <Variable x:TypeArguments="x:String" Name="sPONumberLookUp" />
+      <Variable x:TypeArguments="x:String" Name="sBuyerOrg" />
+      <Variable x:TypeArguments="x:String" Name="sBuyerAddress" />
+      <Variable x:TypeArguments="x:String" Name="sCity" />
+      <Variable x:TypeArguments="x:String" Name="sStateCode" />
+      <Variable x:TypeArguments="x:String" Name="sZip" />
+      <Variable x:TypeArguments="x:String" Name="sOrderTotal" />
+      <Variable x:TypeArguments="x:String" Name="sCustomerContact" />
+      <Variable x:TypeArguments="x:String" Name="sTrackingNumber" />
+      <Variable x:TypeArguments="x:String" Name="sState" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shipment Processing Challenge" sap:VirtualizedContainerService.HintSize="608,1192" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="574,975" sap2010:WorkflowViewState.IdRef="Sequence_26">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'PO Number'" sap:VirtualizedContainerService.HintSize="512,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" TextString="[sPONumber]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_ga=2.6467762.1655813337.1694958224-302507403.1692792980&amp;_gl=1*1c2xsb0*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTM4OTQ3NS41NC4xLjE2OTUzOTEzMTQuNDcuMC4w" CvElementArea="308, 990, 547, 41" CvTextArea="322, 1003, 100, 14" CvTextArgument="29-582-9633" CvType="InputBox" DesignTimeRectangle="310, 992, 544, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'29-582-9633'" FullSelectorArgument="&lt;webctrl omit:id='PONumber+nCounter' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='PONumber+nCounter.ToString' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="7cf359fa-a9bc-45c4-a793-d32d9e93ea82" InformativeScreenshot="6a977cb19481e70060c61081353c82e0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="PO Number" CvType="Text" DesignTimeRectangle="310, 960, 88, 24" ElementType="Text" FriendlyName="'PO Number'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='PO Number' check:innerText='PO Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAcCAYAAADst9g0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPVSURBVGhD7Ze/a9tAFMf7d2kyBAwdAgFPFoV6iciQLBEeDIWYQrMUZ1EWEyimEC81gaJAUcGQwagQtAQXirs4UBAEPBQMBkHg23e6k3z6lbpNekvvCzfo9O7e6XPvvTs9g5ZSaeCKpYErlgauWBq4YmngiqWBK5YGrlgS8Ckcw4CRaTVstx34P4SJrPsFgvMuDpr1te1eF/3PMyzvhU2lhK9mH9NIdElaXNo0n0NWqiTWc/rvPRaBvxoiuA54m7hw9mowtmx4d8KMKbzCcZNsn1vonnvC3od7amN7y0Btb4DZStiWar25Jn1knvn/BTzv9KeHDvU33s/484rsCHYl1B8ubAa97SKsjHTuq3Voo2GYcG6yyP9v4Jhj+GLdH15YBMPC6DZ+LFX0pYcalZjedUm9iJX48nB1xDKoB1/avALwG4eebbhylpGmpzTHoYuFeE7HreZw31qoMx+Uhb1xSG8jzC97sJ5Tn1GH+XqEeeozWY+P2UVX2LByOkCQTJ7oLsCgY/K52TydrM16DTMM29vEIRs4vwce+ehRf+2M9S/gtclmn6KXvy3XfRDPxceUSfK1ovlZRhxdYSnePg64DZs+9OAdL3XuiUl9Fo7fWJSVfXis/BF4k/ynWSvW02g0COCQ20xGvGzKwRCy7K2hdSRsrj30WcmVziK+hg66R3VYZ2wN8/S7mB4Gvgrhxws2MfjOOhZwD8nmJIhfV6ti81Jl30cE1KSIsj9xdI8DbsD6MBc9pDuCxHw1qQSmJW5JmSWPFevZpaiXy6AYa12w8BJjXnkZgEnJ7Y55b7IGM93MrIrA822rheM4JZk2jHCRFesIyiu/IRHBo42lw9mliR8H/CCeYy3uqyVvAik7ttyGQhrufrLOCj6i2ZdysLQqS24R+ImP5c9l2qLcwbdJDV+Ou1S7Ghh8Ex0F5YGToin6LIUJQvBxE+D5KE0+Nm/HfSVAEpUBLwZICfAcn7RlSkoxOBJtcGjmlIBpOggyuSWU3lK8FERRFb5uR7CotFi7rRLguchl9ZTN8YTACyVF+OBjIwQnVK8b9N3525k05umBM1Xeww/i03vje3iJr5AWXGPvZOCiTpoUXSFFU3jDDjQTpsiIpwJeowPRfDOCLx+aFFjTzKFJdi+PMZqwbw7gXzqwd9Y+/w1wJvrTnJKzTu5PczihUzlXhop6wNc9pXGbIkkGTgrHdKXbYf0G6rtdjL4uEZTW8L8Hbn+cYXrOf97KrnyxFlOM6MrJbWgtzQ4c6e/6D4BrqZAGrlgauGJp4IqlgSuWBq5YGrhiaeCKpYErFfALqESzXeAduWQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <Sequence sap:VirtualizedContainerService.HintSize="512,466" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,351" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ProcureEase - Purchase Order Lookup" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="5ba59a9b-15fa-44ca-97b4-00537860594b" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="546,2522" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NSetText DisplayName="Set Text 'Search'" sap:VirtualizedContainerService.HintSize="484,162" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" Text="[sPONumber]" Version="V3">
+                          <uix:NSetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="InputBox" DesignTimeRectangle="1658, 534, 168, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control form-control-sm' aaname='' /&gt;" Guid="7e454c11-cf4f-475b-af13-52fb2a5010c5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKwAAAAjCAYAAAAJ1+HVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVHhe7dwxCsJAFEVR9784C7EQIYWFguAC1Gbkg4YJmDrz4Bx4Taa9pPy7BkEES5RFsLf7ox1OU9sfz2abr1qsJntzsPUwXa7t+Xp/v8C2qsVqso92DrZqFiujqSarzZ852PoFw4j6NgXL8ARLFMESRbBEESxRBEsUwRJFsEQRLFEESxTBEkWwRBEsUQRLFMESRbBEESxRBEsUwRJFsEQRLFEESxTBEkWwRPkbrMsvjGj18ovbWoymWly9rVXqoWquX7DZ1qsW+1jLIlgYnWAJ0toHu0fzJ3KJtVAAAAAASUVORK5CYII=" InformativeScreenshot="dd01e29767329cf6e645849e60fd1149.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Search:" CvType="Text" DesignTimeRectangle="1596, 534, 230, 31" ElementType="Text" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl parentid='manufacturing-data-table_filter' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='manufacturing-data-table_filter' tag='LABEL' type='' class='' aaname='Search:' check:innerText='Search:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOoAAAAjCAYAAACac5YyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQQSURBVHhe7Z1Ba9tIGIb3P+nkg8EQKOTg0+rSwEJND2sCMRRqCjE9NJfihSJyCHsIOiy+rAks9qHYlxwKOhQVNjhswC7blBZUCBgKgsBqCbz7jTRyJo6VpuzBk/h9YA6j0cjCzDPfpxlh/wBCiPVQVELuABRV+HI2xfH4A/786z0Ly9KLGotqTJqsvKjqC/nwKcI/yb/6CCHLRY1FNSZNWVdeVDV7UVJiG2pMqrGZs/KiqlSDEBsxxyZFpajEUiiqAUUltkJRDSgqsRWKakBRia1QVAOKSmylWNSLGON+G7X1EhzHgbPmov68g/BMty+dETx1X7sjXf//UFRiKwWiJhj96oqgLnYOAoRvQ4TDDloPS2j8Eelzlg1FJatDgaiZBNX9sa5rLnSxAopKVodCUffKDkovA4mtNzCXHpfWa2j3Ty/7XEwRHrTR/LEyS5+b+yGmM9mn6G1lsiUnHTTUdQzx4kkP7U0XFdXXqcB96mEwiXVrLmqI+LiL1qPsM0rrDfjvjHcjz3poyPFG/+r7kougqMRWCkQFon4DJRnglU0PvaMIybVIKunxrqTHa3V4/Sw9Dg524DqSHr/WUpwH8B630BlK6jxrd1A7yNNnLeqzFlprNeyp8/7ORIxeN0XQEja2Oxio1PvtAJ3tDVS2D5GdkYnqbjXgyj346WcE8J+oSaOJwdf0JLnNCCPpP4punHJSKCqxlUJRFWlE05EqFXJoRMuJj6pThX+i65rxfhVO1cdc0qxJELyUaz0ZiKIKLao8C/uT9EBGEqItEb36Krwe0WcTho6o5RYGZrBM78uBd6Tr3wFFJbZyo6g5SRTC31TCSrTsZ9FwKhE3FXhh8UQjQaXGQw/Nhw/S6Dxr3+pdFfWnLk7TuubIk/NkEjDlvYYWVWS+gk51KSq5T9xK1AyJhi9EjPJeKmEmah1deWaMv84XFQcvV46bvw0QHp1iKm3BLwtEndU13yPq/GISRSX3kEJRo8kY8dxzafhKxMjT2s9d1ESIhds1ab9sQepKxLsYw6/eQtT4EDsFqW9ynh+hqGR1WCzq9BAtEaXyaMFC0O95kqoXk5wK6vsSMfMFn+c1bKhVXMQ4fFGSCNyA/yZr8zc3UP9Z+nxLVCFbzDIXkwL0duuolD2Eqau3FJWLSeQeUBhR44+BSFeHuyYyyMC/tvWSkiB6419uv5QfoGa+vXQ+Rudptr2S9h9GCHdNMYtFVUyPu2g/zp9vi7ZnviGqrnN7htxlCkVdRSgqsRWKakBRia1QVAOKSmyFohpQVGIrFNWAohJboagGFJXYCkU1oKjEViiqAUUltkJRDfhL+cRG+Ev5c/C/Z4htqLHI/55ZgPpC1OylUg0WlmUXNRZNSRUUlZA7AEUlxHqA/wBOJD7FiqXYcAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NSetText.Target>
+                        </uix:NSetText>
+                        <uix:NGetText DisplayName="Get Text 'PO Number'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sPONumberLookUp]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="79, 584, 234, 49" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'78-806-1402'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' /&gt;" Guid="4970a429-1422-43b7-ae0a-a3a8f437b909" InformativeScreenshot="3f819c8f351751a6f617fbc4f6b557b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="PO Number" CvType="Text" DesignTimeRectangle="79, 535, 234, 49" ElementType="Text" FriendlyName="'PO Number'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' tag='TH' class='table-topper text-center col-2 sorting_disabled' aaname='PO Number' check:innerText='PO Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAO4AAAA1CAYAAABGF9fOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARKSURBVHhe7Zpda+NGFED7/8H/QHlK31KcJ7MNbIsDCQmsqaFeY+oSszbFrDeIlY0wIsLc3pFm9GUnduWW7rDnwiGSZjQjBZ2ZO5J/EIIgvItM3NliCQAegbgAHlKI2+l0AOAbpuop4gJ4AuICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjitqU/l8T8w5qRRDL/0G3UD6T3MJXVJpF0Z+vtUkk2ocwGPQlqdffpL2xP27n0LxrlH8O8LBzVj/+X/B99Qg3EbYsTd5dI9BxKqMSFyYnMbwNbtyvDLxXFU1M/kiS1+xrJl6F0m+1XKMTVSBb9uuiI+12CuG1x4iY6CxbHA3lcWiOf84e6/8lKt4tlfn9Znq9c3s8kttX3hKxQFbc+KCiI+12CuG05KK7iHmpz/GIk+V4qq0FFtgrBw1JLTUQy+Wm/3ODETbdW4KxtW74nkeszlFGljVfraVt3OoBEbmzQDGL1W1eC9xMJt3ZU0bQ+eqoMLK6trzOZPJfpf7oNZfK+fp/dD7OyHY16nb7Ms371Wq+Hstra7cr5cBjEbcspM+5glW+/LOWxem4N9/DqI/vxUHkpbrIYyHSdbUq6fMxFOlfclzQfOLaRRJk4GipvlsqbtH7tjE5led9oy4RZq68rqX9qJMzrdbWeO2zW85ET2NTJBil377HEsf7RfuP1TAbumuFVELctp6xx3QPenJVrBDL5mlc7Lm5fOtdTnZtNqEgPlT7aiqtRpumPsnyxB9dT6WWzenl90R9X9bZ2miVYSTsXvWJQya6zc2fbsteZtR/I4HMub/zU0/1y0Dr44g1eBXHb4sRthqaCM/dW2aXBb864pSzh74fKG+Lqfnecq5u1Oz5X3Fhm71y9UqRoXKa8I3uq63+/rZzAXZc5/k7X7/ne4cjeAVSzjbI/OA7ituW1NW6VC1232fVfNG5+IsoJNJ3O56Dja9xCnE63mAXjLMfUOCKua+Ptek4kzRj65bnniZtKbDOSGn/e6TmH+4PjIG5bThFXuXly804iy8Y329pb5U9Oyn32xVWuJxK5b8Im9oSsyHCtx2w//6q4b6bKNzLLbj2VcNy4759v7OcvxG0L4rblRHHN7Dj4q5I0nvEdtyauUn35Uwp5VczG5scgoenrTcHPENfETmfUsNJH8eJJZ+DbynLC3HcY2/t2b9kRty2I25aTxTUEcnU7OfDLqZVMH07/5VRTXDMojNxUWgipFJ9WNEw/zxP55aS18D8TN1kMs89BLpLNUoa9+lr18tf8votQgePPej0/mnLEbQviAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAngI4gJ4COICeAjiAnjIQXEBwB8KcTebDQB8w5SebuRvFHeDH9BPFr0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NGetText DisplayName="Get Text 'Buyer Org'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sBuyerOrg]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="313, 584, 245, 49" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Strosin Inc'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="35f1e765-fe04-4661-b201-b5e4e31f4b28" InformativeScreenshot="4c7f3add47899f797e1fd99c1eeb9b9d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Buyer Org" CvType="Text" DesignTimeRectangle="313, 535, 245, 49" ElementType="Text" FriendlyName="'Buyer Org'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Buyer Org' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Buyer Org' type='' tag='TH' class='table-topper text-center col-2 sorting_disabled' check:innerText='Buyer Org' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPkAAAA1CAYAAACDZU1fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASfSURBVHhe7Zxfa9s6GIf7/SHfwLla2U1GehW2QHNIIeMMGpYLd5h21ByHEk5aTJ1gipkp7/TfiuN0OSzzSV5+gofEsiRbJY/0SjY9IyQkJNbpLJ4vCADAF0gOAHPOOp2O+iI/AQCnT91nSA4AMyA5AMyB5AAwB5IDwBxIDgBzIDkAzIHkADAHkgPAHEgOAHMgOQDMgeQAMAeSA8AcSA4AcyA5AMyB5AAwB5IDwBxIDgBzIHlLjOeF+Td6XnotqXiKaNRtrnN0nI8onKdUlOb+ZSoLyh5EH84byoOjAJK3hJP8JaP0KaU0zal81Vn0HFGvoc4xEVzFlFu55eC0Fn1YF1Ufypziq6CxLvh/geQtYSUv5uMq/+8FaW9SCr2yR8eHkFIjeCkij4EfeXQHNHs0A1gp+nHhnQNHASRviSbJg+ullvzHgr6YvDBVxSi98esLyXQuhd0vtPihDiiLelWZj2KmVbliRv2k84LLiJZitnWpyCi57rs69p7Smz7N/rXfTXseLgrJYxrWzmn6dLfSRcqHic670Xcs+zu+z9SM7/p+MaVkVcX85SqhuzeuD34PSN4Su8P1Uklmy/1ScnE8jLXOfphfzwuuEjJXpFJe08leUDLWdew95bmuW6wziq/960oGZJvObr1BpUbwLdOFioTGMs9KLtqWOst7WHwbiZm/GqTUel78HQob8osEyQ8PJG8JJ3k9ifVtdj+mwJTbR3IVPisx7Kw9dCIuv8p1cY+iZ32c3VYDSP+7KfQ4VcfVPQnxd66nx5SYYm8KaAeVmuT1QawXeYOBDfvPZ7Q0EzskPzyQvCWsUH64/u6vO8rMbL74rPP2klwwedBWqPbGRjAR9k/U+SktvdlxK70kNBLlnORp6AaZbXouFH9rJu/dGnlN205yK72h6e8gae43OASQvCV+9eMu/hGhrHe88WN3oXcleeeTWYMLsSPTdh4PTZ1K8uJZLA3k8sDnIaSBKLfrnuq4pYA/+25QRRL1NbkcQPyykLx9IHlLNP64u1UobGfJ8EkfV+X6QgC7SeVJLmZYLUZJpTqdUfTBngto9ijzZDsTeufqiLXzYOh2x/eVvNMVg4a5hfL5bvOZeH133d7DDskDmy83G71wXS8/IPmfAJK3hBXKbbw9ZdVLJZ4cbs36WlAmymUv+lAnX3LBZ/sITqTH2WbIfSFCfNd+QXlaXS+/1zP+3pILgkuxtLDt7fOcfIfkamCzfRJ9zFfYePvTQPKWcJL7ScqSxjQd+Jte1eMsmcqXlKLLaGtNrhk5YZZTP18TDKYUp56Itev9F8kV50OaxdtvvKXzcPuNt12SS9QjNK+Pq5gSs1EIyQ8PJD9lLsTsKs1wG24nilu2VBuQ4HBA8hNkMs91+G1maP8x2SmgNvJKEVWsNkP+Usz6/Yby4PeA5CfHiOK1iZfluj3e3Fg7ft7T5HtDyB9PN1+XBQcDkgPAHEgOAHMgOQDMgeQAMAeSA8AcSA4AcyA5AMyB5AAwB5IDwBxIDgBzIDkAzIHkADAHkgPAHEgOAHMgOQDMgeQAMGdLcpkBAODL2Xq9Vl/kJwDg9Nn0eU0/AbsdSCamBuLNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NGetText DisplayName="Get Text 'Buyer Address'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sBuyerAddress]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" DesignTimeRectangle="487, 630, 204, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'5572 Mandrake Crossing'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="71f79501-a9be-47d3-b034-894608600bb2" InformativeScreenshot="8f9004fdd69f58b11e7461404a152f53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Buyer Address" CvType="Text" DesignTimeRectangle="487, 581, 204, 49" ElementType="Text" FriendlyName="'Buyer Address'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Buyer Address' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Buyer Address' type='' tag='TH' class='table-topper text-center col-2 sorting_disabled' check:innerText='Buyer Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAANAAAAA1CAYAAAAwLWVFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAWdSURBVHhe7Zxda9tKEIbz/8H/QL5K7lKcK9Ea6uKAQwIRDdQ9iDhE1KGYuEFENsKIijBndrWzWsvKiU+Wlth5Bx5irVb7Ie+7MzuYHBAMBnu1HSR3MwIAvA4ICAAPDjqdjv6g/gIAXsbVCwQEwP8EAgLAAwgIAA8gIAA8gIAA8AACAsADCAgADyAgADyAgADwAAICwAMICAAPICAAPICAAPAAAgLAAwgIAA8gIAA8gIAA8GB/BTScUmH+2YNr5Sql+HPQ/sybI6Bxagb+e0aj1jqbDO+qmRd3w9b7FUOa6moFTYdt98E27L+AngrKHlJKmfy3KlCWUfyh5Zm3xoeYRypW0uyspU4LENDfY/8FVExpaMsvaGZElH536r5RjuNKPnmasnxYQrOL1npNIKC/x/sSUDeiuRYQ7+bnVVn7YnMXV0AXM7V82R5jOrZ1QkryqjhP+ros+BzTfFm1p63IaHrZM/WZ71U8pvoa3mZUPjX7dZH2c0o+8ri5Lj3N6arbqHcS0XRR91mu5pTcb86pdzmlTKo9lVTcJzS3c6zqyLtIv/foyrRhN5rugOL7nAo1DmXKs99F1DPtd45GNEkLPSdtZUFpIvcPaXSTUmFeo+4/TSg6Mc/uMPsvoJYQrnwY2y/+ZQHx9aeEl7EyJ/RrlAWn9ZmrXGWUWiE5O7wIKM8rj8L1Zv8MnH4dpP08oZCvo1/qgmj+1Tm/dXmcq6pczTNfOAucTebkjo07p8wVuTM+eRc5j09ZscwouWz0w8LI0rqf4ofqwzmrqffNgtZCWkz0ew7MvJUVi8wIKaMJBPSGeSaJoKxcJDQ0O/lWAuoc2wUi3qYv7ufXFQV8P36sLrPr2uP0bqROVJXZhVTqXV7qtSHtZ9fHVdn5TIuO0jH3V9WREE97WfFMR+JlZU712NS1PHt4Oa/aaxGQLjuthWr7MYLQ5SeTSuDsFaPOwAosv5F59SgMqzYGP0y7y/r5Xhjasewy+y8gN4Q7GtBkob9KKn+OdNl2AmLOzALW7cl9OdibEOs5W01poNoQAa2dy9oY2bNa8Vh5z/Sh8lquF5TQcn3szTnJuc+Zi2ZzjlZAjkgV4v3ajZ//woLguVWjYVulNP02oENp42RMqdxkD5XejWlwVLe/y7wvASlkEZtF3SqgrmS/3EXXN2cSFk1s2ubwqq/v1QKqF7zDz7EOw2zfvEBtX22IWJ8x8UqysP9bQDK27QXUbM8KSIWmzbk9zGj8saoXhBc04XOSPQfx+6nPnyFd3MzrTOgTn+3WxrObvDMBBfUuy+GISgjY8MLuuk6dxqI7NgIoS+MLYhNe8TNXdjGP6p2XCcI+hRJebSkg8Sz5bbh+T8I4cy76UyFcU0DB17kuV5vOyPUcLIq+CdOC04gi87keg2mbz1BRJCHbIUX3pudGP7vI/gvISSJkq+qL02eQb2bx292+1OnidCl1lDV37Tq02siIuWEKH7TzVA7LSgjVuWkrAXWvjMfgHfpT8754E3NPZRWlTzeJYDyALNAgErGwuUkEXe9lAanzzFgmpzJoS+ddai/M3sycgVRipH7PVbg5lE1KJSAkwcBWb0C7y/4LqGHqlwiJ3Q0V7HFMSlmbTj1Hm2cgg/VYkhhwCMKIEjeVK+la2Zm3EJDd7W14uE4zbFN9ThdWHtzfhOINIQQURlPKrPj5HHIdbx3CadjbRImTimar3yW3fz6h1AqHzUnh69DuwX0vLCQ3Bb7D7K+A/gg9k4TY/lcBYL+BgLbhbEp5rsIWvX+up3PBuwYC2oLBbZ1ZKhbJ+kEavGsgIAA8gIAA8AACAsADCAgADyAgADyAgADwAAICwAMICAAPICAAPICAAPAAAgLAAwgIAA8gIAA8gIAA8AACAsADCAgAD9YEpC4AAK/jYLlc6g/qLwDgZWq9LOlfAaC9D8i3u9wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NGetText DisplayName="Get Text 'City'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sCity]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="691, 630, 115, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Boulder'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="15f2d1fc-ce84-4f3e-8b80-1b01e010d566" InformativeScreenshot="44682c8e09b49a795b6632b4f2e3da7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="City" CvType="Text" DesignTimeRectangle="691, 581, 115, 49" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='City' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='City' type='' tag='TH' class='table-topper text-center col-1 sorting_disabled' check:innerText='City' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAA1CAYAAAB7qXTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ6SURBVHhe7ZpNa9tAEIb9/8H/QD75UjDkZtIcUnxwcKDGLnWKQQETlSJQzWJFmCC8mOnqYx1JWdJcCtq378CD5dldHfxIsyPhgTBgY7D7GQvBhHKBGQyHw/Kg+CT+03RJuWBQLjCUCwzlAkO5wFAuMJQLDOUCQ7nAUC4wlAsM5QJDucBQLjCUCwzlAkO5wIDIDWS6CCXJctHn+h9hJvSLkuj7rYztvAdVDahNZz0mAHKvZP07r6QVoXNJ96nkJ10nTCq+r+behaL2StTj/LJ+Y30/NM+JgfdyZ0+1WJ1K+GXcGgumS4lULMtRe00Tyu0ro41UbrQky8A9p0mnLFuxr5FLtAklLY+1xHeNtcukzMo5kfU7F0uf8Fuu/cFPsdy7xrt05M4flRxPVUpnplzvY9lcB6bM17lftny7cv3Hb7lWVh7JzDXexdFQOcvyLDL3sAl7l47WkpSN2lF2nxvzes5/fecWuPfciWwPNh9IYNcdtjK5zOk/fsu93FEi6Y8r95wmH5ZrmrFVfeEcQgnrOcnqA/t6j/BbruHSLZtCGi+nEjTGym75OTfiavHvyD3ubi65iplE5al19exsqsO8Nd5/vJfres49qs5z7nMot8Vch9zJtuqNi9AvZk/9+nru5thb+f0HQG6B4w3VWUtuOuDd6uYvb6jGZdec19dCqzybsq9sI3XdyHsCiNx/Q7CITVE24VkjZaHcN5hOWeWSqmNdBbTEC78aKQvldvlkOnC7hZv9O/nWbtJ8gnKBoVxgKBcYygWGcoGhXGAoFxjKBYZygaFcYCgXGMoFhnKBoVxgKBcYygWmJbf4QjAZZFlWHhSfxH9eXWbyB+og+2WTy07SAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NGetText DisplayName="Get Text 'State'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sStateCode]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="806, 630, 106, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'CO'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="b333d6a9-eaca-43f1-8e13-7753ed4ac53b" InformativeScreenshot="096c91b2f1eb39b2c3f6c0c2e0e6d358.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="State" CvType="Text" DesignTimeRectangle="806, 581, 106, 49" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='State' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='State' type='' tag='TH' class='table-topper text-center col-1 sorting_disabled' check:innerText='State' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAA1CAYAAACgEt7PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALoSURBVHhe7Zpda6NAFIbz/yH/wF7Zq82SXkka2JQsBDZQoUtsEVIqaylSG4Y2IkE6hHdHnVHjpt29yxz2HHiIzoeGeZzjTMgAHCRjED0mYOjB4ogyGA6H1UH5ydiPccXiiMHiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiMLiiGK3uPMZwk0Budf/jNlLFNsE4ZV7vP1/hMXi5oh3RliBN5GjkPWpfPHh6HaBqMvEbb//X5jHKMqORYz5sXrLsVecn1ZC8J5geWbKXUxXIW4u2nYsrnNiBStt5D2Ff36kXmGktVEgnpd1LmZ3KXIzRVXInWhTrJHWDRE01x1fRxC7Xt9vTlNvA/aKO/ORmrFTqVI8Bph/ORy8xb1A/l43kZmA2CQIJp2+1TtRtTGW9gLBV1U/CZC86sIyDW9U3/tFdc3xrYC5baGu+WYESt23c/9TYq84heP5iLftk1+GFGvMmtT5caoceR7c5nyE9bbX7miqXCCpHgSJ5Id5SBz4z/V3yB88XXZ6rBZncC+XWD/nzUzAa4iRrjsuzsHsZ3yQ7kx8Km4SIa9afRCbNp2eGhLiDM53825SaUuXHRM3fegMv9TpUqfUfxMnkZfps49OpzZgsbgxgqf0cM92sdYD+6e4PJo27ZqyXzO9bfgkVe5T3DSpd4qouoGEuPOaLUeJeznFuHN+aqwVdzhr1AJi227EZbJsBnUUvtWFKuQuR3StFi1PdYosnhbqPefAu2sXHO3MNO8zFWqBkr+EmKnydlarKO/b7B8lUt+elaXFM04t6Ve995QaSBH5vSffrVaXZuVfiTmrf3ExUS7nY33eTamOd4Mk0+06KdO9CpGa8jLUffNnJfaDbckpsFgc8xksjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjigsjiiNuPKAoccgy7LqoPxk7Kd2leE3SBAhVsrbcQEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="484,81" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="C:\Users\thiag\Downloads\USStates.xlsx">
+                          <ueab:ExcelApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,580" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="sd:DataTable" Name="dtUsStates" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;Planilha1&quot;)]" SaveTo="[dtUsStates]" />
+                                <ueab:VLookupX ColumnIndex="2" DisplayName="VLookup" ExactMatch="True" sap:VirtualizedContainerService.HintSize="444,260" sap2010:WorkflowViewState.IdRef="VLookupX_2" Label="[sStateCode]" SourceRange="[Excel.Sheet(&quot;Planilha1&quot;)]">
+                                  <ueab:VLookupX.Value>
+                                    <OutArgument x:TypeArguments="x:String">[sState]</OutArgument>
+                                  </ueab:VLookupX.Value>
+                                </ueab:VLookupX>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelApplicationCard.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelApplicationCard>
+                        <uix:NGetText DisplayName="Get Text 'Zip'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sZip]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="913, 630, 110, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'99208'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="d730bcdf-923c-45f9-89a8-48dd79ec09a2" InformativeScreenshot="3722e2b884895c4df1becd5b16212c58.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Zip" CvType="Text" DesignTimeRectangle="913, 581, 110, 49" ElementType="Text" FriendlyName="'Zip'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Zip' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Zip' type='' tag='TH' class='table-topper text-center col-1 sorting_disabled' check:innerText='Zip' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAA1CAYAAACdgL+pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVHhe7drNioJQGMZx7x+6A7uCGWwlzGIWzmqWA1kILWKMcBOHUYkQJN7xM608M1vfh+fAnzJPLfqlHSNHOCCGsz8kwvRHSJCcxWLR3Klvma7GboRUHCFBIiRIhASJkCAREiRCgkRIkAgJEiFBIiRIhASJkCAREiRCgkRIkAgJknLIQOKi+8eRZZhNOzc4tBOLQ/DwGhgph/QlPBoxp4eyXreQOGjn+uuk2Zes/YfXwEg55ETL4Sitjz53ag5gYJAvEp7KVvESS7Ac9j2dWjem3T5GsjPD+bm8GIne3dvztAQF6VU4LeNZ9m/3+2yQzbiWUmSpFN1nQEoj4er++XMPB3IViukg0q33tN8KeU0l6tGWvuyy9mFtiyIQSO8GUJpQvIk5Vshq/nieu00nH597EJDBd/cdV58SXy1zCDnv3I+4usioRynJp32RwlPrrBv9IFCkz9eTo+vG/xY7Z1Mtdq7d9h9H9lxTDlktcLr33jZ6OCvkz16iU/9pqAzzRL58Xn7oyfIdqTVCElJ5hGRzjJAgERIkQoJESJAICRIhQSIkSIQEiZAgERIkQoJESJAICRIhQSIkSHeQ9QbTn5PneXOnvmW6Gtxy+QV4IgjVWEo/lgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NGetText DisplayName="Get Text 'Order Total'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sOrderTotal]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="1147, 630, 198, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$968.92'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='8' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="de5fd985-8c23-4a15-ab29-fcb7e86b2a33" InformativeScreenshot="d3ba74eb9bf509601d6cf34e7f7d2acd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Order Total" CvType="Text" DesignTimeRectangle="1147, 581, 198, 49" ElementType="Text" FriendlyName="'Order Total'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Order Total' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Order Total' type='' tag='TH' class='table-topper text-center col-2 sorting_disabled' check:innerText='Order Total' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMoAAAA1CAYAAAAAoXRkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARrSURBVHhe7ZxvS+NKFIf9/uA3SF+573rpfVVUsFJB4b4o9tIoZbsYiCxhszJsLKEEg5x7ZjKTTNuknhW9LO1v4ME6/zp2z5MzM4U9IhQUlDfLUfSYEABgNxAFAAFHx8fH5oX+CQBo8L2AKAB0AFEAEABRABAAUQAQAFEAEABRABAAUQAQAFEAEABRABAAUQAQAFEAEABRABAAUQAQAFEAEABRABAAUQAQAFEAEHDgopzQaBaTWpX2vw3g8lpS8ZzQ/PKkpf/vEJIyEyoKW9vfi5t3dykexy1jP5LP+vv+TA5XlN6YomUjSFnkpFRORV1VUv4wpqBtrIjPCqRrWjwpUo5fhXkXei0o8+qT2bBlbAvjmMwMRUzjtvZOIMpah/2kT+GTNaJUNB8GXltAw3/TKnhYFnU38Np+h/8pkN4d6BaIIuIwRXHBQTlFZy3tzOBrZnrQS0LXpm5MsRnEgfH3lNKVfW3aAhrdqyYb6af7Q0zVDH4gDWgS+f14m/c0p1HPtdvg00F7FVH2Yl/X41vYEejBxZzSZUHlq+7ApeR1fZ8271d/Dl5RYdX2ZUTzH16GdWv94uaHKGsd9pHhQ27+iel5Qf2WdkNvbgO9oHis65woOeV6OMuQP0c04b6DO8W5pyrlKqPMP/PUgTSgUNl6PVZldRCWT6FdhxOF30O36cBOODjdmtroECW48iTQ8zx7wqy4r5blNKRkc+v27boaP0mrv0mP1VtSN5ZFWlsrRNlfxo82ONzTsxUnxqYoXFygmX7XlOgnP5fs3m3TePv2zWYkF0g3SRV4nKH+cWN7E0rNWM5sp7rOBR/HJ69tYOZ6g1ZRmjXpQ319zuJzWWwyIc//vRKiOyP1aTj0LjT+WmxkSIiy1mEf6btt1a6MUgcGi3Kp6xpR1J13ptkKIEudkar6Oot1FDXT41zwOTkFtAX6pcsmLUE8syqy7CZTdYnSG9H00dsm1gWiHM4Z5SziZ7guHJBX/kG+4dwF9tYZZSOIT91cQlFe8ubGymNxo8e9I/g+RZRzijyvyxe9Lcvt9tLNCVHWOuwnAU1+2kdlmdFi7TuTjVuvWd/Wd4gi3Xo5Obdu2U7o/MyN+yBR3rP1ek1punmpwCuOL+xaO7deGc3rcfvLgYrC8NZi8avZV7z9PUqXKF724bJ2mDcHYBdYQXM24qL7KXcjVaY0McH2UaK0HOb9A3nHGctcMvzUlweurqDkhh8ivSHN3UVEvbZmK0qrlEJzxtpfDlcUAz/Nb6Ptb+ZVTOHWN/Pdophv+PX1sAtE3l4lt4uWoNf9UsobX4yg6f2ITkz7x4miCS6mlPi3XZvXw67fkPuxtKbYefTVsrLZp7oajkmZLs3aBrecec1H1/aZ7BcHLgoAMiAKAAIgCgACIAoAAiAKAAIgCgACIAoAAiAKAAIgCgACIAoAAiAKAAIgCgACIAoAAiAKAAIgCgACIAoAAiAKAAIgCgACIAoAAtZE0b8AAHZztFwuzQv9EwDQ0HixpP8ADfuh6hFGpHMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <Assign sap:VirtualizedContainerService.HintSize="484,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[sOrderTotal]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[sOrderTotal.Replace("$","")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                          <ui:IfElseIf.ConditionBlocks>
+                            <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                              <ui:IfElseIfBlock BlockType="If" Condition="[CDbl(sOrderTotal) &lt;= 300]">
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[sShippingType]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">Ground Shipping</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CDbl(sOrderTotal) &gt;= 600]">
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[sShippingType]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">Express Plus</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="Else">
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[sShippingType]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">Express</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                            </sc:BindingList>
+                          </ui:IfElseIf.ConditionBlocks>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:IfElseIf>
+                        <uix:NGetText DisplayName="Get Text 'Customer Contact'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="5ba59a9b-15fa-44ca-97b4-00537860594b" TextString="[sCustomerContact]" Version="V3">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" CvType="AnyWordGroup" DesignTimeRectangle="1345, 630, 311, 73" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'sbraniffd9@umn.edu'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl tableCol='9' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' /&gt;" Guid="02c84555-de9c-40e3-bb9a-1d8733506878" InformativeScreenshot="9f42a6b78f66731be3fdf6a3033d6c2d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArgument="Customer Contact" CvType="Text" DesignTimeRectangle="1345, 581, 311, 49" ElementType="Text" FriendlyName="'Customer Contact'" FullSelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Customer Contact' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl id='manufacturing-data-table' tag='TABLE' /&gt;&lt;webctrl aaname='Customer Contact' type='' tag='TH' class='table-topper text-center col-1 sorting_disabled' check:innerText='Customer Contact' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                        </uix:NGetText>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ShipGlobe - Tracking Number Generator" sap:VirtualizedContainerService.HintSize="484,298" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSetText DisplayName="Set Text 'PO Number'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sPONumber]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="315, 614, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputPONumber'" FullSelectorArgument="&lt;webctrl id='inputPONumber' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputPONumber' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="25cfa988-035b-4667-9156-d3517c12ad3c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="dc070e8ba7c0637d925cea76f15759c7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvType="InputBox" DesignTimeRectangle="315, 582, 88, 24" ElementType="Text" FriendlyName="'PO Number'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='PO Number' check:innerText='PO Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAcCAYAAADst9g0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACWSURBVGhD7dSxCsJAEABR///jxCJYGCwsUoVAGoPNsbLhOLB3p5oHC7ftsNwluuv06C9VMjjM4DCDwwwOMzjM4DCDwwwOMzjM4DCDwwwOMzjM4DCDwwwOMzjM4DCDwwwOMzjM4LAR/Hafo7XWN1UZwZ+vJdZt75uqjODv43NeeUb30uuM4Cmj56Vn+PzTnf/PT3BVi/gCfR/gS1Oq5zgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSetText DisplayName="Set Text 'Buyer Org'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_3" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sBuyerOrg]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="687, 614, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputBuyerOrg'" FullSelectorArgument="&lt;webctrl id='inputBuyerOrg' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputBuyerOrg' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="116b0c9f-a449-43f9-8ffb-977d302f3670" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="6effe5cfb1c673435ebbf4ffe4d02e45.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Buyer Org" CvType="Text" DesignTimeRectangle="687, 582, 76, 24" ElementType="Text" FriendlyName="'Buyer Org'" FullSelectorArgument="&lt;webctrl aaname='Buyer Org' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Buyer Org' tag='LABEL' type='' class='' check:innerText='Buyer Org' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAAcCAYAAAD2izi6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQNSURBVGhD7Ze9a9taGMb7P3nSEDAYAh08WUsNhYgO1wRqCFxTqOlQL8GFi8hgMgQHLl4iAsUeigzBg8FDUIbgQkCG4gsBDQVDQHAHgeG57/myJEdOVBSDb9EDh1jHb47e83s/zvEr5MqkHGBG5QAzKgeYUTnAjMoBZlQOMKNygBkVA7gY1FEoFGJDe12HOfakxe7Ln9kw/6xif0/uoaSjcWzB+SkNXlgJAKswhw6cazHsUwNaQUPzypdWu6oA7rnwdf/IRH8s9zDsoXlQpH3paF29fCIkAKyjH4uWi26ZInk8IRd3Vx75rm2CtPThnOgconn7srtIAXAO620coLAzMZXPQgv035PdCc0u6X8O6PMHG7G8XYpgaF8csRZtzB20YbzWaD3WLgy0B/NIoKYwab4+8OBdkV2JfV7I7yIKHLSpZLWngqx8OrAgEIf+Bnc91JkPzHem5QLOWQM6va/AMvpdG6ObPurki3krTJSeBrgM4I3b0GmR9nXo2rMASf6wQTYGrHv+yBVctylLyuje8SdMWVaUajAHE15uk8sWf1f9m4IkANY+NqFXWrCoLKdeAqLvHVqXNncjnzfI+1rj+7P58tLfD000SwY6rG39YOEmv05FtrYuQ7+qJU2843mAjHp8VP9ysFhKI1IagCorymeueCbHJsf0vcqAWRflFcxQ7lkZhXKXGgeTAFjYa2L0wCeSdWuSP/FgJSmeINJfAtWd8a+F/BGa9E7jYi4nhLxLg7NIAbAGa+bDf2Bjgfm4A4NAFD+PVuWYCiCJw9hrw2FJ82CjQQ40hmKVTcESQ60tAT7Xf1Nm4PyiSmtTMLgL0t+3FjWpiHgwHoPaNJ+iB4bzIvXV8zpAedhEACpo7ATnEVQwSWKNaLCiQ+GSAKNrJilVDyT/KrTWqi9LgO/79CkiFYxtAFTzCqATKevgxqSSXN9sAOcLNeePJkw6iMJyJt1bMMi+/jXp1JR/0wIkLb6xU5j6Z+J64Snc+a4QbwAoSzjmK+kXSjh+D3SGooS1Izt80R3rX+TshYuFKnO6sOrrGcjEbWn+UY+Sh0ihiNqZLd9no/fJQJXWENtMD5Ctt/Ee+Iad8utXnA0ASe553C9+iBCDlACF4Wqwm/yJjfm/0oiLnP07csyTw5N771EPFKL5P2h+/UrDxU75LhoVdtElm719GJ96kV8NvwJQyP9nwoMQ+yVy0sd0raqeAri6Xq3216VAsBLWKIOljVQM4FbE+2D8GvR/VDBuEUB1AIXaGsD5jY3prYPuEZVPha4lkX6587ofoXOp2kpYwvqpai2htgMwcNE73Jf9iNL/UY3stoKZheahjqJsY8VKg84FF35CEmy/hH9z5QAzKgeYUTnAjMoBZlQOMJOA/wCuE6obaaFw3AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSetText DisplayName="Set Text 'Buyer Address'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_4" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sBuyerAddress]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="1059, 614, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputBuyerAddress'" FullSelectorArgument="&lt;webctrl id='inputBuyerAddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputBuyerAddress' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="6bbb9b50-edb5-4cc9-9b22-91f24be8fb6a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="eeabe68cac4d80f83efcecc50a27529f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Buyer Address" CvType="Text" DesignTimeRectangle="1059, 582, 105, 24" ElementType="Text" FriendlyName="'Buyer Address'" FullSelectorArgument="&lt;webctrl aaname='Buyer Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Buyer Address' tag='LABEL' type='' class='' check:innerText='Buyer Address' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAcCAYAAABrhjEyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUlSURBVGhD7VfPhyNpGN7/qU51CM0Q+pBT59JhmTKHjWFC6Fg65jBtaTW00ofWh1ZNi2VjWJXDqjCyhByi5hAZhjSjlqYOTdGEPoTw7Pv9qNRXlepOjImdWvVQknrr+/F+7/N+7/d8P6FA7lCQlkMUpOUQBWk5REFaDlGQlkMUpOUQBWk5RIK0sNeApmmJR99vwBoGskUOcO+gwXx/2cXWXss+1kS+P4HpOY37xkEo3/8rZJBWg9X34I3F414a0DUd7Y9z2erHRvDBgFbSyecauv9I4ybkn7QGnHtp4JjBrpCzpyMspOXHhY/uzxoq1474vZpJ+wb8/0gTgVBJE+0sTOW7QAjnDbU7J+uS+ryk/7+6SOzPpUgA/b0nxlrOMeuZMPZ1WYoNmD1fSY4pLLI3egGCj9TuBfv/TMi+2KhoFdhfKNWuK9AqNmZL+S1CYk4d5Vcm3HF3nbR7D/ZRFXtk115U0bqZYnCWJG0Vh8cZOs0y7e44JuHYRutgj6+L97/yECq+LL46MF+xPuJ7/dSB/yg/PvpwTg2US/RN20P1tQnnaxyV50lbLhAMTVRpceY47rSRNMK836I2Brp3/JVjMTbJSRFUeqPMrZLDdVi9ES/Fow8nfK7GX1FYBGn14zaqByfoDj1Mg9iPNGZXClG3jMCk3wyza5qTAlG/cldz1nhwFNIeBmiTTT8Uc3pjF/ZrScAaaS20j/dgXLLxfJ6kAdn1Ug3tGzGH17+AQeNVL6ciIRceTDZ+08aIfR86sI4uMBUf4b2nhCo1YPO5R3DOWriYxOvYKETYUztLZsk2pEWOxSVqgdEpfY8EAg9qRGCMVeD5myBNK7UxeOCGp7E2X2pXM8yJDBovXTZFgsWk8V1KZLjqnLJKrJNGZFwr48k5Wv2kBhBz0DqYOXT5zm78mSWVQrhNMU+QrhISGaTV0b2dY/7AnhD+UGTJ3rvBqtRtRRqBE1Ay4bGoPbhoKYt5KkHEE40tSdviPE3uYgERfBkohs8XvBytnV2JMy0OWroQp880sYaU4JlYyjrST1TFFuSbEHjlpgVnEmChlk4q8yzmXLn3pkgXly3OtNjuSm+zSZOZqJAWEcWUp1B1kkCCGENNEPWJvJSkqWNmQu7iRIDiZ5X1OyEtFS9JmjnMWtc8QQ4efIxu2rw864dUHqMzjYHOXn/YQfuQlcrapvL4NGmRPSLNU7Pjk0XljhaVCLCsz8cWrLSau+vCoPaZJWI17pakyeSoXHqpIHm4UEvaE+VxMTzhgX6+PProMEG2ibSoTNORslYdVMLU/+TXCYtFJLIS7eYYvEvOm0Fa8p4WHaJ6040zj6s0Egx/zBBGJZQUUDW90xh4W7KnRAkjlAsRRRSwA7/z1kCNxhAL3o60LNETge/w1Tea8zJDiByS7wppuKczh2e/KkTKJIaIzE2kEbgQofjUfusKocHExHmDSqHsG9DO3lcE2LVof/I3VYRlAIeUaP3ckSLFFr4ox9NmIcLk6rkby1EOqsk3LVRJgnPZTHV5dEeTpc40AbL/Qva0/Odg6lSRxqUyjLcdeKsgbENakH29iCB3Ye13X7wvQ3hXqu82vNDj86hlMynJxVXEZ/HZgjSG8HM37s9k+5EFl44CDnbt6FvKlSB51ZnfuqQm5XWD+hrqdYCQIG0n4EFbl94Fvh07I83/5GI6oQtqk860g4xLboFvxm5IW8zQoTNASFpWfqS9wHfB7stjge+OgrQcoiAthyhIyyEK0nKIgrTcAfgXTtlvkZlDrG0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSetText DisplayName="Set Text 'City'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_5" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sCity]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="315, 733, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputCity'" FullSelectorArgument="&lt;webctrl id='inputCity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputCity' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="b17bca31-8eb6-4a21-9f3d-c104e7220ac6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="bdc8fee6c2049c3a21544892fbea7257.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="City" CvType="Text" DesignTimeRectangle="315, 701, 29, 24" ElementType="Text" FriendlyName="'City'" FullSelectorArgument="&lt;webctrl aaname='City' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='City' tag='LABEL' type='' class='' check:innerText='City' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAcCAYAAADvANYcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVEhL7ZWxa6tAHMff/+SUoVAIZHNzylS38KCZngRaunQpFh6SodMjU5ZK4GGGh4FCoWBB7BAcChmKgYBDQQi4BQLf/jzvolb7EmhTMviBA+887z7+fj/PHzgAaglBLSGoJQSHKxHPHQwvOlCaEiSJ2lEL7V8GrGnEZxBTg90zprz/CUoS4VjDMS1+/JM2ffDgudQeLNyctdGgcW3CRZYBuxcs0y4QwTol4b7P+7tTkFg9GZClBrq3AVZ8rMAiQLjm1yW+RCKEeUKLnFq03A4U0uHDSNKWa91xhNWjTtGTMXhmT2yIJxrNUWEu0n4mEdno0sOdvyEf2EJBIkbgDqElAr0hS5MfUizXMwxkCY1rLxdZ/rI9m55KySReLSahu7y/jVJh8mi8S0c4UmmeBlvUztxEm1Kuu5nWF0UioVoCS5tFSB2l687+yJDkAWa52irXxImJ4MPiy7GrBLHZeOVBP8qEBDkJ+jpoYYUWUvoe4iqRhQNnzq9LEmn+pd8e7+dYmFCpQI2+XkwNpyCREP4T54QOc8LPCdemw0tl48qVk349JQn+xpKCy5ED70WUXUIMu0eCNL9YpCklCcarVzwxmwo6FzfbT8x1CPtKRYtC/j4tyRnUqvhcE6ol9gCLEtVbVdnvV2I5g+P68Mc61VoD53f5FGXsVSK6p82TlDZV6OMPfgXEt6Xjf9QSglpCcAASwBtuJolVtDiRmgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSelectItem DisplayName="Select Item 'Select One'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[sState]" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="50">
+                                      <x:String>Select One</x:String>
+                                      <x:String>Alabama</x:String>
+                                      <x:String>Alaska</x:String>
+                                      <x:String>Arizona</x:String>
+                                      <x:String>Arkansas</x:String>
+                                      <x:String>California</x:String>
+                                      <x:String>Colorado</x:String>
+                                      <x:String>Connecticut</x:String>
+                                      <x:String>Delaware</x:String>
+                                      <x:String>District of Columbia</x:String>
+                                      <x:String>Florida</x:String>
+                                      <x:String>Georgia</x:String>
+                                      <x:String>Hawaii</x:String>
+                                      <x:String>Idaho</x:String>
+                                      <x:String>Illinois</x:String>
+                                      <x:String>Indiana</x:String>
+                                      <x:String>Iowa</x:String>
+                                      <x:String>Kansas</x:String>
+                                      <x:String>Kentucky</x:String>
+                                      <x:String>Louisiana</x:String>
+                                      <x:String>Maine</x:String>
+                                      <x:String>Maryland</x:String>
+                                      <x:String>Massachusetts</x:String>
+                                      <x:String>Michigan</x:String>
+                                      <x:String>Minnesota</x:String>
+                                      <x:String>Mississippi</x:String>
+                                      <x:String>Missouri</x:String>
+                                      <x:String>Montana</x:String>
+                                      <x:String>Nebraska</x:String>
+                                      <x:String>Nevada</x:String>
+                                      <x:String>New Hampshire</x:String>
+                                      <x:String>New Jersey</x:String>
+                                      <x:String>New Mexico</x:String>
+                                      <x:String>New York</x:String>
+                                      <x:String>North Carolina</x:String>
+                                      <x:String>North Dakota</x:String>
+                                      <x:String>Ohio</x:String>
+                                      <x:String>Oklahoma</x:String>
+                                      <x:String>Oregon</x:String>
+                                      <x:String>Pennsylvania</x:String>
+                                      <x:String>Puerto Rico</x:String>
+                                      <x:String>Rhode Island</x:String>
+                                      <x:String>South Carolina</x:String>
+                                      <x:String>South Dakota</x:String>
+                                      <x:String>Tennessee</x:String>
+                                      <x:String>Texas</x:String>
+                                      <x:String>Utah</x:String>
+                                      <x:String>Vermont</x:String>
+                                      <x:String>Virginia</x:String>
+                                      <x:String>Virgin Islands</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvElementArea="685, 685, 366, 42" CvTextArea="702, 699, 82, 14" CvTextArgument="Select One" CvType="InputBox" DesignTimeRectangle="686, 733, 362, 38" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Select One'" FullSelectorArgument="&lt;webctrl id='selectState' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='selectState' tag='SELECT' type='' class='form-control' aaname='' /&gt;" Guid="c1b6060d-7ec4-4384-8b1d-3b21a57b5700" InformativeScreenshot="d44102309c2b6457436f9330881329ac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <uix:NSetText DisplayName="Set Text 'Zip'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_7" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sZip]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="1059, 733, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputZip'" FullSelectorArgument="&lt;webctrl id='inputZip' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputZip' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="7c3147db-6ab9-4a6e-a879-ab3d2a81d147" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="17da00ad3efae838cf1f97d6d1ceccf5.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Zip" CvType="Text" DesignTimeRectangle="1059, 701, 23, 24" ElementType="Text" FriendlyName="'Zip'" FullSelectorArgument="&lt;webctrl aaname='Zip' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zip' tag='LABEL' type='' class='' check:innerText='Zip' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF/SURBVEhL7ZS/S8NAFMf9n266IVAQsnVqJieLgyA0UNCpm4t0kODQSSqICC2CpIN06iCkIFkknRwkWwahIBQ6FArfvjQX8+tSWwwKkg/ccI9397l795I9/CKlrBBKWSH8lcyBwRhY3miYmMbzrpz1bBdishncFxt2alj3LaiMQx94ybz3mZhvz+Yyzm0YVQbeNOEtRewHbJAtYF1wMKWF0acIrUmXMZjrjw7s6zNo+37ZOdRmF3ZQ9y9yZdMnHZwWtccLEQmRy7jCoZ3eYeiX+LmP8xrlKG1Yc5FGyGWeCV1h0GjDtCpPxg77cOOl/qA9KF5/CN9aJlt6MBu0uGbAiZ0qQi476LliHkL7HMfzJDK3V6eaa+hMsncKkMuqN29iHvKNbDHpQPOvnjllHLksU0b/KSiuD6IuiWRzWuQ/6pGB4Tj5rQXDpS/MRy5TVRWVk26yQVJPEclejeQfIzNo4Tox52aXIzi3YetXqDN3aP3tScvzKWWFUMoK4b/KgBVkgP2lwWk5TgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSetText DisplayName="Set Text 'Order Total'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_8" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sOrderTotal]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="315, 852, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputOrderTotal'" FullSelectorArgument="&lt;webctrl id='inputOrderTotal' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputOrderTotal' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="8c4af50e-09ee-4820-b541-807875306651" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="66bee1db97e08d8f14f8082faad75ce8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Order Total" CvType="Text" DesignTimeRectangle="315, 820, 84, 24" ElementType="Text" FriendlyName="'Order Total'" FullSelectorArgument="&lt;webctrl aaname='Order Total' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Order Total' tag='LABEL' type='' class='' check:innerText='Order Total' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFgAAAAcCAYAAADlXHhOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP+SURBVGhD7ZfBS+NAFMb3f8qpB6EgCB56shd7MnjYIhgQtixYPOhlycISeigepMIS9hAESQ9LBfEgZEHiQSoILUiFhRyEgFDwUCh8+yYzaWObGLt0bvPBHGYyybz5zcw3L5+gJFUKsGQpwJKlAEuWAixZCrBkKcCSpQBLVjrgZx/2QRXlVQ2aRmVlDfpBE53+UHT4X4Vwd+l7ja6oL0nPLgwW57vFgPss+ktR+tzmAAeXRyhTQMWtOuwLH/4NlWsX1t4aCloB+mkPI9F3cUkCPArQZXHG5cJCheZQ+5Vou+ki+GDgYdugBbGwWJQfADy6swhuNsTg3IggG+1AtCwqSYBnJXa0dSfqC0oS4ADOFnXYcjAYi6Y5jeB9K5BlmPDFCkyCee3Bjnb5NLBh34W5zdo0FNZ1mHQinNkgxkP02ib0dfpu3K89SCxwFxa1s0UNLqkf2ZbRDsWzDL0DOLyxURcxceuz4Seso9ugdvYsLrsuoSONQ/hnJmobRd6+WkbtxEc4YZUHOOxEQVXPc3bnrUUDFNC851UOuIb6fhH6cYeO4gCRU/db3Gp2WuiwI3rt4GiTQ5wGMaIJlSnYKqy2Fx1l74xZFJ2S3zFEDri6X0d54wjOtY9u3llPBUxjHVcIbBHVhgsviomsb4eArVTQvOPfHD7S/fOVwa3BZn3uA77Yrx6s7alt8jg16GcxrzzAIijzRtSzRDbCIMXBc8AaymQrUw1xtU+DlVroJU/DSwc16jsJghahpJXQeuDVWL2TEn83qnHA2kodVy9RQ77SAD/aERBjdgONAw6GTm78hO/iPItgp5n67XX4Dl/WDh79MWlwgtLndQ64AueJ17m6aK7MDzYbRLw46SWeoAD8zUvYRo5SAPOxTHgpHxle1unZNMtIBcysjC7P2qawl7jEFpIL+EMezHYmHfPEzuSBz6ZAiwCuwqH0b/gyW2ISAvDct97R0gEzeyEr08h3f5IN3g0QUozed+r3ccD0mftmdIzKDR/DFMiTLGLij1mAMyyCfOwoCeuvA53qc8eWafLecgBnjpViEb1TsigC7CdiiDbMD1/USeMeWiVqWwQwU2YezC6DlBQuHfB0sd5echW6qJJBiEuOXTwn7IJk43XoJ0dHhfrwcZYEONqFWZecDrufmNUDuxtoox061I9d2rRhDln2ZKBFlyyLsbVTQfUzxZ4A3NmjODdMuPHFSJoDHOm5C7dRm/mTs+E9zf/JZQFmCm9bk7SmsE7B3VKqw47fG1gjBNfTfvOp07IAc+WlabGCizh1FFbB0tAvZRSjubCUM+BzmQCmmTzYMNg7ibZ0wEpLkwIsWQqwZCnAkqUAS5YCLFkKsGQpwJKlAEsV8A+x7QPPG4T7MAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSetText DisplayName="Set Text 'Customer Contact'" sap:VirtualizedContainerService.HintSize="388,162" sap2010:WorkflowViewState.IdRef="NSetText_9" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Text="[sCustomerContact]" Version="V3">
+                                  <uix:NSetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvType="InputBox" DesignTimeRectangle="687, 852, 362, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT inputCustomerCont…'" FullSelectorArgument="&lt;webctrl id='inputCustomerContact' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputCustomerContact' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="6b5e5672-fa17-4b36-b254-c8490d4e01d4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAW4AAAAqCAYAAACTHLFBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFJSURBVHhe7dixasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAjdzYHvgzMkufPPJR8DgCrCDVDmJdy3+2Mcjqex2/+Mz69vMzN749LiNDltXlvCnQ85dL5cxzRNz7cAvEtanCanzet4L+FO1XMAgG1Jm9Po2RLuFN1NG2B70uY0eraEO/9TANimdaOFG6CAcAOUEW6AMsINUEa4AcoIN0AZ4QYoI9wAZYQboIxwA5QRboAywg1QRrgBygg3QBnhBigj3ABlhBugjHADlBFugDLCDVBGuAHKCDdAGeEGKCPcAGWEG6CMcAOUEW6AMsINUEa4Acr8G+7d/mdM0/R8AmAr0uY0eraE+3A8jfPl+nwCYCvS5jR6toT7dn/8FT0H3LwB3i8tTpPT5jR6toQ78iFVz6H8TzEzs/ctLU6T19GOl3ADsH3CDVBljF8WML9sDnn7iAAAAABJRU5ErkJggg==" InformativeScreenshot="4882f86ff8f85051a67b17c676d21362.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArgument="Customer Contact" CvType="Text" DesignTimeRectangle="687, 820, 137, 24" ElementType="Text" FriendlyName="'Customer Contact'" FullSelectorArgument="&lt;webctrl aaname='Customer Contact' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer Contact' tag='LABEL' type='' class='' check:innerText='Customer Contact' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSetText.Target>
+                                </uix:NSetText>
+                                <uix:NSelectItem DisplayName="Select Item 'Shipping Type'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[sShippingType]" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select One</x:String>
+                                      <x:String>Ground Shipping</x:String>
+                                      <x:String>Express</x:String>
+                                      <x:String>Express Plus</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvTextArgument="Select One" CvType="Text" DesignTimeRectangle="1059, 852, 362, 38" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Select One'" FullSelectorArgument="&lt;webctrl id='selectShippingType' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='selectShippingType' tag='SELECT' type='' class='form-control' aaname='' /&gt;" Guid="ca057589-a9a4-4623-a934-3404df5369ea" InformativeScreenshot="896cbf4cbb70abf6ed23f5d603df5c57.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="1059, 820, 104, 24" ElementType="Text" FriendlyName="'Shipping Type'" FullSelectorArgument="&lt;webctrl aaname='Shipping Type' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Shipping Type' tag='LABEL' type='' class='' check:innerText='Shipping Type' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAcCAYAAACERFoMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARGSURBVGhD7VjfSxtZFO6/55M+RJQQZGshPlQLHcqqD7GLtJAsCKEiBEKkErDZl8ruBFYhTUCylA5sCKVYRGm3RZSwS0QYKJbAt+feOZNMJmNyhdE6cD+4D3fm3Dv3nO/8unOv9gkQ45c30IgANGERQ/iEdWwcl18gOZPA2MQUxqbnMP+8BKvF71XQLNDaFMzrrLkJdFqwttOY/4l1mUgg9iiNfOUz7A7L3DJCJuw7mvk5UmwOz3bqsKwGrEoJK8kEjN+vYf0bI6wF82cyfO4Dz4fgtI5nD4TDGVjZrjq6WHWYGynEJqcw/riIA5tlbxEhE/YBG+SJsc1DnjOEN17HI380YTbpQWRdScqJCUOQtryHs1uOtPAJE4qsvcNQ5/OlzfEZA5kypRl+HUjYqDWMM6uIpeQsxkUKm5xFspuOHWdyUpszjHKwR3zdMei9gVdf+EEA7L9e0DcSyLz97jxwz3xqo7m9ivi0+Aal0OUirP8cERfyjG6apZKxtNlAW5H40GvYWTkljTX+JAez2cLlwEFIoRylzelFZMtO2qztrCFOyhl/sgEHCFNYI2TyC9KI8xt7qIkUtr+H7JME4i9FxJ/j2HqNJWGkp6/lHs1TNnYfzmEuk8xjE2f8JBCdBrJCzzxHqzzzAozlOcRTJezK75dkJI49raLtSDn2mVzopdlKAfMkE6d9LllmGMJvOgj20R4yD10PIiOLIs3vcFhEbGIW+QOeMw42ZzE2QylITPyEqayhNJWk7wXWyq7TcJQNTYmcNrMNnl8F317yzIPZ5eAlnXGigKaYXNSxQjJLlXP5zkW7skoyadQu+MEQ3AhhLi5PG8iTh4vU4KYf4WFuShocrJiPMJU1jswopVUIU4ywb++Qob1iMnoJTFj2b2fqwjmXVy/v2b3DVwKuwI0S5sBGLU0HmvQadhGvjmzYF/7hqwd9hA1fEx5hajWsXUtT+vVEPZOxIZnpIYiwzH6QHnZA+RhE+DXsaPCOYq2Tka6TunyEKa05KlFNC5axbbdWHSI/Q2dZH5HuvhGxoqV/UIAV5ADeLpEfKREmopLWxej7A02ZAlkC4RJ2XsWKUORhGlsVcW9xm4MpJH87YSFuIERzsOneb6rYem7gPnm+LLzvC7J5MIp1HMt0r7DGK+M2HUJmlRoRT3qTdc+9J37qryV9uPIetug0Vf6WX4Uwngvd7v9q8hn5buclfwhCjzD7S50MuchtLSkW2H7b+LrvaW372m9Cp4XamiEN0zPAiDUSCjKdE+zS3uLyO/I+RudolnO9/cjQ4k/H1v7J4J8ORcIE2u9NZB7x1YP2jKdy2KV0r4JbqGEaYUITFjFowiIGTVjEoAmLGDRhEYMmLGLQhEUMmrCIQRMWMXQJW61C6W+xxo9Fl7D1t0D9H36qcWfRJeyPj06UCdJ0pN1ddAlzSRORJogTNU2PuzfuHf7bI0yPuz6A/wFSA2w0IrOZXAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvElementArea="560, 937, 304, 50" CvTextArea="670, 952, 82, 18" CvTextArgument="Generate" CvType="Button" DesignTimeRectangle="562, 939, 300, 47" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Generate'" FullSelectorArgument="&lt;webctrl id='btnCheckStatus' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnCheckStatus' tag='BUTTON' type='button' class='tooltipBtn btn btn-lg submitBtn-wrapper mr-1' aaname='Generate' check:innerText='Generate' /&gt;" Guid="09f4dded-18ae-4c57-b3f1-ed7b0a7b2185" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAzCAYAAAAQGFTpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATfSURBVHhe7ZxPaxtHGIf7EQr5IP0G/gi99RLSWw655CDIKYhCaY6iUFoaEkPACZhAoIceCmnAOJheYgpOwZASDIEgcAOlRSAMJjD9vet3dkerWcexA9VMnh88IO38WcliH94ZrfxJIISQQoPACCHFZllgj++GcHMthCuXQrj8KQDA/4u5yJxkbuplUWC3r+UnAABYBcxRSTqBmd1yAwAAVomkEusEZiVarjMAwCphrvJ0AmPPCwBKwFzl6QSW6wgAsIp4EBgAlIcHgQFAeXgQGACUhweBAUB5eBAYAJSHB4EBQHl4EBgAlIcHgQFAeXgQGACUhweBVcdaCFtPQ5gd+QervNXj2Z86Pg5hlBsDUBgeBFYT429C+Mc/z6EcPQ/h68zYItH7fS0xG49y7VAtHgRWDaquZv5ZBlVcL+6H8N3nOv5ZCOuTEA7+Oml6qcfZ8SWi9xiznWuHavEgsFr43QVl8tr+It9nUxVLVUtIBPbR4kFgVSAxxS2vV+uZ9tOQ7Ha1BDv28bZfNv1Zy9Gkz4On3qh+4xtasv2rfn5o/kpiVJV3kTlHqh7faE5LFNGG5DRNzvNWjw8edQJux/eSiuye/hZxXstckn9ytWuHcvEgsBr48Vf/EJWtTPsgEs00mq+XmQSxJAvJoF2mJjl+nlR27zunpHLoDy0moK8kryiufqZqWxjfSxTY5kD7aRUqlIMHgdVAe7FKMA8y7UNsq/ppoot6V1XcWJXUpiqlWDn9Znto6rcgC51jx77NtG87Ja6YKM5zzZn0jYLbU2V3oHHr6j8Su3reJH2PQ0tIvb65H589O5ljfD2El16NHelY2xeKxIPAaiCtkHICa6XiaaoYXdRv0udJ/32/0A+1ZLPnqWz2JIK276RxT5NGIOec80xfLORkNSCwnySoJr2/x0jnjsc3k+NQHh4EVgMbiQx2+vtRIiuwpEoZylzz2vhUkBvp3MkcjUDOOWdOJj98r9epttxS8l0C67/fXNL+UB4eBFYFSSUUK5wc8cI+t8A0fmHODyEwLQ3b/TNncP/Kg8DAg8BqIS7RzGRDm9S7fqtFIzBVatOTp+FA1U6uf+TMAvsQc4rX3nSktodfngiuXf4p7xJYO7fe7yQ5DvXgQWC1YLciZG9kXdOyTxWa3foQE/enfomb8Oq/v66LXX1tw/yh2qdqixf/mQUmLjyniAKbPwvhlqR4S+c5jCWm0soqOb9t1t+xc9kS+nr3i4R5IsHJDUlcr+GPmm7m/UjxILCamEgYpy3h4n5Su8EusbxIxNZP3Fx/H4FdeE6xpWP9HGvO6LC02mpv4PXs6zXZ8Tuq2OI3n0vRsvXbZA4oDw8Cq43R1RD2JIBUZHbx70taT7w6agVmqGLZ0fF5UuFY/z0tAZfu2TqLwIyLzGnYeB2PwrUfot8bOpeqruZc3hYFZkx6XwTYDbV/q++GxrTjoUg8CAwAysODwACgPDwIDADKw4PAAKA8PAgMAMrDg8AAoDw8CAwAysODwACgPDwIDADKw4PAAKA8PAgMAMrDg8AAoDw8CAwAysPTCezKpXxHAIBVwlzl6QR2k38xAgAFYK7ydAJ7fDffGQBglTBXeTqBWW5fyw8AAFgFzFFJFgVmMbtZicaeGACsAuYic1JSecUsC4wQQgoJAiOEFJoQ/gNzJHRLhaRoLQAAAABJRU5ErkJggg==" InformativeScreenshot="b663ae200bb9c9d9017462e9e69f7218.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NGetText DisplayName="Get Text 'Tracking Number'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" TextString="[sTrackingNumber]" Version="V3">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvElementArea="707, 889, 205, 34" CvTextArea="747, 896, 124, 17" CvTextArgument="277082109171" CvType="InputBox" DesignTimeRectangle="717, 914, 202, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'277082109171'" FullSelectorArgument="&lt;webctrl id='guidvalue' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='guidvalue' tag='INPUT' type='text' class='text-modal' aaname='generativeAI__trackingNo' /&gt;" Guid="bf63fc2e-2f24-4583-b40b-2701d1c0e17e" InformativeScreenshot="88fd86f15fc2d5b00a48777442526fd1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target DesignTimeRectangle="607, 851, 462, 39" ElementType="Text" FriendlyName="'Tracking Number'" FullSelectorArgument="&lt;webctrl id='success-title' tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl id='success-title' tag='H4' type='' class='modal-title m-4' aaname='Tracking Number Generated' check:innerText='Tracking Number Generated' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvElementArea="785, 967, 104, 43" CvTextArea="823, 979, 29, 17" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="788, 969, 100, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl id='btn-modal' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-modal' tag='BUTTON' type='' class='btn btn-success btn-modal-ok' aaname='OK' check:innerText='OK' /&gt;" Guid="2c3581a0-5025-42dd-bf9f-f332a4976c80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAsCAYAAACJ1f3bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOFSURBVHhe7Zq/axRREMf9E8Q/wD/Axs4yf4KdTWxTanEkZcDCIiBnZRBEsDCQRlC0CGIRY6EcBAsLIRICQgioTUIgCEEY53u+dzu7N7v77vb2djDzhS+E/XG3N5+8efPm7SVymZYDMq7mgPY+Eb16QPRwkWjlBtHSVaLbV4gWL18s4zfjtyMGiAVigtg01HSAfhwQbd4junNNf1h3ZsQIsULMptBkgE5+Ej1b1h/EXW/EDjGcQOmA3j//N4S1L3anGzFELBOVBshHzeyNmCaoHhAmPO0L3M2N2NaoGpDDad81kMoBeVqbnyvSnQ4Ik5j2Qe72XFI4jANCGejV2vyNmCsl+DggT23dWUl1eUBY7Wo3uufnQschDwgtCe0mC+4tEe1+ITr7HR6WdX5CdPiOaP26cs8qXxuu+8p/y3NP+J6owa38ua4NBkJ5QFZ7a+svGEZ4RlUMbbBSuK8MEMP8Ho6ffRDHjRgMhDJA6LxqN3TtPlc3Izg8Ynb7fGyBaJX/81+/ySAA0o4cDSWA5OjZuSmuN2TRBc8AoT2uXdyp8d8eUxrD2VRSWY+Dfxou+fONaC2e0wAxkKNw7JhByc+xZLAIygBZ7BqscWqLKs4j0rk5JY4KBdAGp7ShGPqWNm8ZseguZICw0aRd3KW3eUQMxeuDx8r5kbmAOA6XHsVFdhGQGD2/ODWOfYYhg0VQBsji4vRzXLgxKO28dAz+aZz4BaCcePS8NDx6YLAIygBZ3KYexHJrxoAspzcYLIJsA9ridc9QXCBsKOdHvpuluMOEFGexvJZWAVlMcbJI2LuvXwOPJn/Wx5QigWVtgSqtpjiLRQLK7P0JyuxzHnG9eE4BJMv23LXGrBYJVjfneo/SF6rbcfTAGiC2LMnlcUtWy2yTC9Xg/lMBQhODe1tMWSWA5KjMLWwNWV2oWm31RJc1Sw94FE3aLJVz2z6PSHnOgtVWD+QvInbv0mYpZHm74aK4crvBN+y6d+WGHeRb3t25dssb8pdGujFinvTSCOSvXc3fya9dRXmqm5+V1BZVDgiy2l34nyy6BpqqAUEOqT3XwIHqAUGe7mbvirQmlQYIwiTm1V1zI4YlBYGmdEAQykAfTdMbsVNK6SpNBigKq120JLx3V2/ECLEqdAhSNR0gKXRe0R7HhIeNJgxhi9vnbRu/Gb8dMUAsEBPRlZ5WzQG5WpUDMi2iv3R/x46VTOOHAAAAAElFTkSuQmCC" InformativeScreenshot="06de04fcafca6af5cb7d11ac630aea5b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reset'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="23138dd6-7a1f-4dfb-bda8-c3d379ede86c" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" CvElementArea="873, 937, 302, 50" CvTextArea="1000, 952, 49, 17" CvTextArgument="Reset" CvType="Button" DesignTimeRectangle="874, 939, 300, 47" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Reset'" FullSelectorArgument="&lt;webctrl id='resetButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='resetButton' tag='BUTTON' type='button' class='btn btn-lg resetBtn-wrapper ml-1' aaname='Reset' check:innerText='Reset' /&gt;" Guid="c0f490d1-6052-4a79-b83c-efd08fb1692a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAzCAYAAAAQGFTpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO/SURBVHhe7d0xSxxBGMbxfISAHyTfIB/BziZYprA9sBK7tNclRKJVIohwYJFCooUYxCY2iSAYgiAcBypIwoEIcvDmnZ133Lm92egROHe4/wM/1N3ZwSI8vLM5kmdCCCGZhgIjhGSb0QLbWRVZeikyPyPy6jkAPC3XRa6TXDdVMlxgKwvpDQCgCVxHRSkLzLVb6gEAaJJoEisLzI1oqcUA0CSuqyxlgfHOC0AOXFdZygJLLQSAJrJQYADyY6HAAOTHQoEByI+FAgOQHwsFBiA/FgoMQH4sFBiA/FgoMAD5sVBgAPJjocDgnfyxPwiV3FyKHCymnwGeioUCg1dXYEVuRfbn0s9NxGuR058iXbWn3yfXYKpYKDB4ocBuvtq1FyJrayJ9f1kGP4bXT9Sy/l72e5zo98k1mCoWCgzeSIGZrW/+uuj99ej6RFFgqLBQYPDqCmxdfy5SLTA9Uh7pke7Obg/0mNn7LLIcr9Ep7iBa43Ktk9zH+N+ee2ifT3ajEopsulkoMHh1BbathVPkUuR9uK6l09OiSaWvz7ds3eG5XazkojPGPhQYEiwUGLxUgX2I3oH93i2v7+vEVETL5+iNTks6aW3o1BSmqMNZv65nP1/rs26iauvarpZaZ8x9OEKiykKBwQsFlspAp68NLZdirZbKlV3v6XSU2iNMWGEAu9WiGjo2OmPsQ4GhykKBwastMJ2OvsTlE5VJXcIU19Ziit9/9bXItsLHIMbYhwJDlYUCgzdyhJwrJ6T4+DhW8ajlRZEzneAGds/l2JUQBYb/YKHA4I0UmLr/CIVOYdvhCKlfw7uts7fl2oe0dPI6Dy/sdRIbax8KDBUWCgxeqsDiKSy+fv83k1pIJ2t6VNQjZmtWZFOPjD2917Z1e1pUV1qCm7qPu3+sk1gRV2Bj7BOX3d25yIauaYVCxVSyUGDwkgWmOmEK0+xrcRTX9etp3Tszza+2rvnHEbEbXto/Zh/7Pe7LzlJ98Y/pYqHA4NUVmCuZC39LbrXMwme8ig+paqnchGOh5k73+K7HwbDmnRZQ/P7LfUi124n2eOQ+Yd32rkjf1lFg081CgQHIj4UCA5AfCwUGID8WCgxAfiwUGID8WCgwAPmxUGAA8mOhwADkx0KBAciPhQIDkB8LBQYgPxYKDEB+LBQYgPxYygKbn0kvBIAmcV1lKQtsqfqfLgBAA7muspQFtrOaXgwATeK6ylIWmMvKQvoBAGgC11FRhgvMxbWbG9F4JwagCVwXuU6KJq+Q0QIjhJBMQoERQjKNyF9k2G23NdGMmAAAAABJRU5ErkJggg==" InformativeScreenshot="44e978d0650e4adbe5c782ec8f56eafd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-1728, -8, 1736, 1416" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f68e4600da12bcdfdcc3efe10896e23d.jpg" Selector="&lt;html app='chrome.exe' title='ShipGlobe - Tracking Number Generator' /&gt;" Title="ShipGlobe - Tracking Number Generator" Url="https://developer.automationanywhere.com/challenges/shipment-processing-tracking.html" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="9349355f863453523a88007184562656.jpg" Selector="&lt;html app='chrome.exe' title='ProcureEase - Purchase Order Lookup' /&gt;" Title="ProcureEase - Purchase Order Lookup" Url="https://developer.automationanywhere.com/challenges/shipment-processing-lookup.html" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+                <uix:NSetText DisplayName="Set Text 'Tracking Number'" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="NSetText_11" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Text="[sTrackingNumber]" Version="V3">
+                  <uix:NSetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_ga=2.62553260.1655813337.1694958224-302507403.1692792980&amp;_gl=1*zdzjm3*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTI5Nzc3Ni41MS4wLjE2OTUyOTc3OTAuNDYuMC4w&amp;_fsi=B8tldH8f" CvType="InputBox" DesignTimeRectangle="865, 992, 544, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT trackingNumber1'" FullSelectorArgument="&lt;webctrl id='trackingNumber1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trackingNumber1' tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="fd42c63d-8734-410a-b6e5-32c15372272a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAiQAAAAqCAYAAACDZkApAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFvSURBVHhe7dmxasJQAIXhvv/DFYfi0OLg4CSCi+ISbjnFhAgd1bN8H5whyX2An5uPAQBQJkgAgLqHILlcb2O3P4zN9md8fn2bmZmZPXVpjLRGmmNtCZJ8yKHj6Tymabq/BQB4njRGWiPNsY6SJUhSKzkAAPBqaY60x2wJkpSKmxEA4B3SHGmP2RIk+a8DAPAu6/YQJABAhSABAOoECQBQJ0gAgDpBAgDUCRIAoE6QAAB1ggQAqBMkAECdIAEA6gQJAFAnSACAOkECANQJEgCgTpAAAHWCBACoEyQAQJ0gAQDqBAkAUCdIAIA6QQIA1AkSAKBOkAAAdYIEAKgTJABAnSABAOoECQBQJ0gAgDpBAgDU/Rskm+3PmKbp/gQA8DppjrTHbAmS3f4wjqfz/QkA4HXSHGmP2RIkl+vtr1RywE0JAPAKaYy0Rpoj7TFbgiTyIbWSQ/mvY2ZmZvbMpTHSGusYiYcgAQBoECQAQNkYvzLpB4lHAkOxAAAAAElFTkSuQmCC" InformativeScreenshot="8bf1635b44788281f1eae0f867c62784.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArgument="Tracking Number" CvType="Text" DesignTimeRectangle="865, 960, 128, 24" ElementType="Text" FriendlyName="'Tracking Number'" FullSelectorArgument="&lt;webctrl aaname='Tracking Number' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Tracking Number' tag='LABEL' type='' class='' check:innerText='Tracking Number' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIQAAAAcCAYAAACgcReJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVFSURBVGhD7ZjRZyNfFMd/f1eehhD2oZQ8dV42fiT60FgafQhL87J5qZQ1fYml4sfG8otQE2pKyUNNqXmplJWysixDyUMJIZTv79w7907unWR+bZrtPrT3w5CZuXfuued+7znn5i8YDApGEAYNIwiDhhGEQcMIwqBhBGHQMIIwaBhBGDS4IMa9CjKZzP9fuy7GvMtLMIDDxjgaiPskY7i7L22Dwp2LCtlj7XlLxxsc/UFbOI/55/fBBTELBwiugvjyPhdIBFW0lWfBTYgZ7/ISPDbhGcKbl7ZBQQgik7FQ6YXi4ZxXL4gkUcRwyIw/xZ+b8JMQgqjskh+yFbgJTRhBMK4desacE6J/UEKO/b6j5w9jBN0Gqls5ek9Gv7NRPQ4wfoi6SSa3LhofbOpHbTI52FUH3u1EvF2c8OS8Bitjw7lmMSGZMsQ9a//LQ2N7g9qysUto9EZ6FJmO4JK9G1k5bhvDCzEXZv8ypCBO+mhtUb9iByNlPguCkL5JfE9vN7d59oN8UYz8lSs20GeCE3Zy/5APa111HtI/PobdGkrv6DdFr429FoKkKu8CtKqqn9U2ig3f26hsWprPGSsKoozavg37Uwf+1QAhs3jqw9muoX0WpRa/W4dNxpS6820VnlbJQAuF/TY8noI8tPcLyO33EUkiIYiQFoQWsHIiv5EiCNrBFRKB0/P52O6hTTbm0frOGxFjeHs06WwJTWGfd1wmcdCzpwiiR6P97KBEv+1/huLlmoJgNm+W0eL2kDC44OqoFy2Uvnj6PG55RyLyTz6f54LmPrzooM76Zhvwp6IZ95vu5+Y2zXWriQFXl7DhYw018hv3yQ+5KSNWFAQVWvEipjGDf0CDyoJsFqBBi5v/HCzm/3jXKYJ4GPJdae25COP3KYLIlND5yR9ETPqoyYVk3LaQJyE2LtWRZwgOVxAEEZI/WLRq3kTfWUsQCZtlQa8KbmEe0j+JSCXtjDbfBP19avPR09fn3kOV2tTO2VNpg62ITWdlQejOJR4mGJ45qL4XYVte0hG8n6r2ZYgJx1cVXuxtRoogdkg0/F4SfUc6MprH4kKlPY9JCAIPIVwWabbIJ7Qb1xJE0mbet6ALOzEPeV/4dyTuJWTXDn2TR9akD/Ur+paw4W8SFu+/yMqCcK7FPWeGwRcW3qhu+Erh7nqE8f0E/iEN+hxBHPqY3PV5RLFZnhNv44kknasuCichiNPfJAjGncfTGIt0/pMEIXbsYzYv7btcEHk1inCWCIL5kNZg4eLOTPPbnDUFMUCTFWvkpBgW8vPKoBT+6ikpYzaVT8RkRA2hF5SM5wkiShkZVM/UILp6ypDMLhvcrlJxQx+b+6asn0ZYPmdzeszmFQSxkDLEGFE7Ma+8g0DWFJLU1LvImoKgXfCJjKCjWesiKmJaHwoo71DUUAaNcrBa7Phwj8rIZcl4vua6IKLdNQ/RzxaE/E62gHo3KjxZURlV4KsLgkfEIxYRE2OLPG3T7gxpN4bXrOCj4psVfY/ZvIIgLCoYo4JeKSpjHxGiGLfe19Hh60HRrOdQESu//+KCIKZDtMUxx9qkY99ZiCAZUonxTWd+PHzCsRP3VFjFqeO5giDYsfi4Eh87Swcu/G9RytDrFIVUQRBTGkNb6IjwvIESO8ZRv1yxhs7NJOGH9QVRORli8HU+F/1IKRgP0ImP2WTLVhXO2RATHiWeKYjXzuhbgUJrC8mMbHgDgphRZGqK/ynmKcNC5TRtj7xtXr0gxpfqkdjCBvsT7cqIIY03mTIM6RhBGDSMIAwaRhAGDSMIg4YRhEEB+A+qYwcBO5Db1AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NSetText.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NSetText>
+                <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                  <ui:IfElseIf.ConditionBlocks>
+                    <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                      <ui:IfElseIfBlock BlockType="If" Condition="[sShippingType.Equals(&quot;Ground Shipping&quot;)]">
+                        <ui:IfElseIfBlock.Then>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Version="V3">
+                              <uix:NCheck.Target>
+                                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_gl=1*1iivg6g*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTM4NDgwMi41My4wLjE2OTUzODQ4MDQuNTguMC4w&amp;_ga=2.59996973.1655813337.1694958224-302507403.1692792980&amp;_fsi=B8tldH8f" DesignTimeRectangle="305, 383, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT inlineCheckbox1'" FullSelectorArgument="&lt;webctrl id='inlineCheckbox1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inlineCheckbox1' tag='INPUT' type='radio' class='form-check-input' aaname='Ground Shipping' /&gt;" Guid="5af3bfc3-c6e4-4daa-bb49-3d8fce8859dc" InformativeScreenshot="c396b0ace0ae0da833c79e069e339e11.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="323, 378, 126, 24" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl class='form-check-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='form-check-label' tag='LABEL' type='' aaname='Ground Shipping' check:innerText='Ground Shipping' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIIAAAAcCAYAAACtb2fOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB7SURBVGhD7dLbiYUAEAXByT9J/32gKKKocO4yaWw1VAZdkf4ygjojqDOCOiOoM4I6I6gzgjojqDOCOiOoq2EYAjWOY8AItJqmKWAEWs3zHKhlWQK1rmugtm0L1L7vgTqOI1DneQbquq5A3fcdqOd5AvW+b6C+7wv/3ZcfMhs2ogwnzcIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheck.Target>
+                            </uix:NCheck>
+                          </Sequence>
+                        </ui:IfElseIfBlock.Then>
+                      </ui:IfElseIfBlock>
+                      <ui:IfElseIfBlock BlockType="ElseIf" Condition="[sShippingType.Equals(&quot;Express Plus&quot;)]">
+                        <ui:IfElseIfBlock.Then>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'checked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Version="V3">
+                              <uix:NCheck.Target>
+                                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_gl=1*1iivg6g*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTM4NDgwMi41My4wLjE2OTUzODQ4MDQuNTguMC4w&amp;_ga=2.59996973.1655813337.1694958224-302507403.1692792980&amp;_fsi=B8tldH8f" DesignTimeRectangle="743, 483, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT inlineCheckbox3'" FullSelectorArgument="&lt;webctrl id='inlineCheckbox3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inlineCheckbox3' tag='INPUT' type='radio' class='form-check-input' aaname='Express Plus' /&gt;" Guid="e667710f-e42c-42b8-b933-0e8cd362c746" InformativeScreenshot="0715114acf02149368ae9021e3df7aa2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArgument="Express Plus" CvType="Text" DesignTimeRectangle="761, 478, 91, 24" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl aaname='Express Plus' class='form-check-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Express Plus' class='form-check-label' tag='LABEL' type='' check:innerText='Express Plus' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAAcCAYAAAAHgGM3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQZSURBVGhD7ZbfZyNRFMf378rTUEIfwpKnzEvz0tGHrdLoQ1gaS2upLDV9qWWN0tiHUWpCzbLkIbKs2YfKUllWlmUoeShDCOG7587cm96Z3mTTH3ZW3Q8j5s69N+d87znnnhfQ5IYWP0e0+Dmixc8RLX6OaPFzRIufI1r8HEmJ3z8qoFBQPTb6fM5zQuWv8bIGuxvyGcSlTeM1eNf8/QlRiF9H62uAIPUMEfE5z4m7/vbgHVowCgZqF6Nk0r8V/3lGuQq1vxH81zRedjBgr/+L+BMyxKSoaH6Z8BFgcGKisELGxZk6grdNexz1MGw3Yb00aL8CiutNeD9v18wcCkN0DiwUZeeiATwaK60wWwyUNjJrx0PpexHmlvR9OkLwoQ5zla9dq8P5xiNYwTx/hx/JJzF+R/w+bPKp1s7sm523yE7OPSN/QnPIsLKNYEyvv1xYcooK8VcMFDdseF2Wyj6ON9ghWHB/8WmxoZto7Jow91z0vvYRMrvG5FiFDmtLrO3B3UsO14+dmiB4R3vRu8O/e4d1HF8mToVnFu1rotlOyoh/Wsd+ViQJtb8T9A6YD8ePEH+xnYIlLtyMcVwg870Pl4Q2dnySXCDEb6LHDkcwoTVlmvsuILOI2FB63+2k7pLBSTlJ9ykfYEwHcGht+YQVgRH8Hdp/20Moz+H035PDIjCW4I740wnCbpOym/yL/494kPiL7RQoxCfhbiJEsyd9Woyk/DCRRUQKuPgHvURkieAwMSY2mYsvl6/ZWrav6jlKJJpcObAoleOupM0zRhB2sE+BUVi10Dil0nfDx+egDjYD1bedW9EeJP5f7OQ86MIdXdRgUGkxKMWdH3wwhguYiWiGSnz7Mv7E4WtfuRikDp8/cjRPIwy7LTTWWGpX0+nMovfSg71VpP8oon4htY0ZlMGWzZolxY8+NzLziEV2EvcX/9pHjU60dj6g2kibVuQyMafsjIOk7PDoVYsvajY5kNUrVYb4L4Oc6+xJh5pJ8cFpdaE/S/k7R/zNc8nIacizVpq3yE6OQnxVny/ShtUyEnzdxZBtftNBgw5iVh+F+KUSymv7cOULd9YREXPEF/dJYXUTzif+358octarNJcMYE7ulLB55NElTd+6ThwIxh7LNNYMVFHdbcGPbfbQZHtVWhjy7bMsJf7346TvPxFljLeiFQqw35Qpv/txU2BWWIfExV9o5y1LXLjsSTYN21RuMqUmLkFs7Cp+S8Tfdkk00Woq2sV54jPGIXqzdpHVTFa/A4x4JEU/fNh1k9pT9r0I68DDUGTZdYDWG6lN3XEQZEqzzFLik5BJOyzZS3dLc6NEftN6dr+c9RF9S2fIQjs5KfEfjxA/nV4aNVr8HNHi58gTi6+5D1r8HNHi54gWP0e0+Dmixc8N4A8q1e8JC1dKywAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheck.Target>
+                            </uix:NCheck>
+                          </Sequence>
+                        </ui:IfElseIfBlock.Then>
+                      </ui:IfElseIfBlock>
+                      <ui:IfElseIfBlock BlockType="Else">
+                        <ui:IfElseIfBlock.Then>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,268" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Version="V3">
+                              <uix:NCheck.Target>
+                                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_gl=1*1iivg6g*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTM4NDgwMi41My4wLjE2OTUzODQ4MDQuNTguMC4w&amp;_ga=2.59996973.1655813337.1694958224-302507403.1692792980&amp;_fsi=B8tldH8f" DesignTimeRectangle="558, 483, 13, 13" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT inlineCheckbox2'" FullSelectorArgument="&lt;webctrl id='inlineCheckbox2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inlineCheckbox2' tag='INPUT' type='radio' class='form-check-input' aaname='Express' /&gt;" Guid="c738ad2a-a00a-4ed1-a307-f49c4c507777" InformativeScreenshot="75a9c25af91e19bfc6c6bd548fd63800.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArgument="Express" CvType="Text" DesignTimeRectangle="576, 478, 56, 24" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Express' class='form-check-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Express' class='form-check-label' tag='LABEL' type='' check:innerText='Express' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAAcCAYAAAA9UNxEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMsSURBVFhH7VU9a9tQFO3v0iQIGDIYApmsJV4qMjQEKjwIAvESL8EBoyymUEQgXmIKQYagQMBD0BC0BBWKAkGdDAYPAYFBYDi970O25MgkTQttbB94oPdxr96599z7PmDFsCa87FgTXnasCS87Vp1wAEtRoBSN00Ceed8oJnzQgX/n58djLM+8bxQTXpJsFuE3CScITjUoG014Y7k0CWFXFKg1B4MJWxA+jMsA/lcT2iYrCRXlmg1/xC04Rj2D1i0E4xCdWhkq+5Z7GPqwTQ0ldhelBM3M2yaPDpq7zIb2NzXsHTuI0vuMIzjHOsob0na/CecxkZtvyfCYzhDB7ZZP9IHoQqcAGHCHYjv1oW6odNEOXFYOt100yCYbKEHYRP2wBP2LS2UTgRfNwIFBttVDaXvnor2rQqm0EbAfJj6aREalAHrctwPLlHt0I/+EztJ97Ftm68FpmWjfv0R4fswFILm3oCka2lddGJQ94yoT/tTHxy4innGJIRGhdf3bgE8FYQXaWcjnAjH6h2R74AryKZ5cmHS2fkOrI5f7MS6FnzxGcGtk/zlV23MUEz7xED/Fs5HKZQopbTqr1lz6TRbCR/UikvMUAzifZsEThKvo/uRTiQUBl8PosT8lCM90kjMrEwvO/QBJhlzyw4bOFLBlwOoFGMySy/HGpsUiqXLZKhUbYS6awsd2LnMMRYQNONNSYFgQ8HRkL/8UwTuvo8rI7ZCks0mZxIhuO6jvMHlXXyHpFwiPrgyKMF32weP1lJel9DEvaVabtC6ytIiwrMFtC/68qrK+st9xH42M3/w5KpEjugtJPFVhMeGid/g7SYcdGVINEUldSja+qRN5DfYDnxKEj3K5jNK+nW9aFdaVxaliwgTetFjWGujyxuPD61kwSKL8LNvf2iO5emLvjAVfRaNP9T0hFVHH3zt1ZEOzha+j/rQnvK5pscGixB3Oy1jIe7YmfbT6CM7TZ+n507KQMMMoQHf6tCgoVUxY1yFi5p+yFl5bMCslca9NHc1eJJJBiB9c6tqzJ03PPlmEOcJ/A5Lwi33g32BN+M+xcoT/b6wJLzvWhJcdK0YY+AWo9Yz8OHFt4gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NCheck.Target>
+                            </uix:NCheck>
+                          </Sequence>
+                        </ui:IfElseIfBlock.Then>
+                      </ui:IfElseIfBlock>
+                    </sc:BindingList>
+                  </ui:IfElseIf.ConditionBlocks>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:IfElseIf>
+              </Sequence>
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="512,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f41eda9d-30f0-43f9-aea3-a8e565b036d9" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_gl=1*1iivg6g*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTM4NDgwMi41My4wLjE2OTUzODQ4MDQuNTguMC4w&amp;_ga=2.59996973.1655813337.1694958224-302507403.1692792980&amp;_fsi=B8tldH8f" CvElementArea="1287, 1257, 143, 39" CvTextArea="1330, 1269, 56, 14" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1289, 1259, 140, 36" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='submit_button' tag='BUTTON' type='button' class='btn text-center' aaname='Submit' check:innerText='Submit' /&gt;" Guid="4789fa59-c279-49f9-b3f7-30f1c49b5d55" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAoCAYAAAAR33OgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMeSURBVHhe7ZzBalNBFIZ9BJe+hW/gW7jpyoUvEOgyuwpu4spuRBCq0E12Ci4UQiUbEURdBBRRAiUQA0UJhEAJHP9zc07uZJzqzSRVRv4fPtrembn3lvkyZ3IX94owzBahQMxWWRfo6zuRe3sit66J7F0lpEadUDfUkSC1QNpAccifUEcCiWqB1K7UAEJi1BVLLRBXH9IUdcVSC5TqSMhFWCgQycNCgUgeFgpE8rBQIJKHhQKRPCwUiORhoUAkD0u5ArX3RU5/iCzs/hdzkckbkaMb6f4XcfJpOX70ON2+NThvFVwn2V4olkIFaotM7b4XkGj0TeTc/h7eT/T/DZcu0AFExzVOn9bHBrhnzQD/x1rfgrCUKdDzD8t7nmPFaflxrDy9rkgn6NeESxcoAQX6x/Rs0ucQqZ1oV568WvaZ4Wd4PJ48F2j8Yr0kTnH80fVfx/Vvi3wJ+k0wrnUT7cNgLO5rJXJUwvw8YU68b0FYyhSohTLlJUtL2ACTdCeYbGVTgTTVPgoi+LnP0eYi+Lg5+lT9UDZdmJm1nQVjx1gNq2tGAvWwanr5naK/lreuXaMkLOVuog8h0QQTGWaEfYaXtE0FWmAyXZYWVpnJ8vCqn48L+73G71VwH89s835s19Xyqn+nNtHxPZSIpVyBnAcdlBSsBh7/5G8qULwH6pscftzHhZt0Hxtew6+7EoYClYF/8n2ikgKhzI2Xh7MFCic9NZYClQA2rR+xUQ2f+XRQvqrYRB0FE+llbSUZEgvUtITtUqDhw/pYaVjKFOhtULLOMRkT4BvazyhpVb+DamtS5TsmT58VeR9NLJBGN8cjiOT9dBN91665S4G62B95Zriv/n7dVgqWQlcgfeaDiZoGm2gV6X30EPEYX7G9S/VtDe2xCC7BAKuBfo33nGGSDxNf43chkJbSlzj/zJrCc5aC5f/ZA5G/i4UCkTwsFIjkYaFAJA8LBSJ5WCgQycNCgUgeFgpE8rBQIJKHpRaIL1cgTUm+XIGvdyFNSb7ehS+YIk1QR5IvmNJog9pFkUiMOqFuBPJo1gVimA1DgZgtIvITAD5cJ023zqUAAAAASUVORK5CYII=" InformativeScreenshot="009b87d320aed4e69bde9b036727522e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-2425, 125, 1733, 1219" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bf6934d71594873d5696c6de0d52eac1.jpg" Selector="&lt;html app='chrome.exe' title='Shipment Processing Challenge' /&gt;" Title="Shipment Processing Challenge" Url="https://developer.automationanywhere.com/challenges/shipment-processing-challenge.html?_ga=2.36846752.1655813337.1694958224-302507403.1692792980&amp;_gl=1*1f8m392*_ga*MzAyNTA3NDAzLjE2OTI3OTI5ODA.*_ga_DG1BTLENXK*MTY5NTIxMjk4Ni40Ny4xLjE2OTUyMTQ4MjEuNjAuMC4w" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
